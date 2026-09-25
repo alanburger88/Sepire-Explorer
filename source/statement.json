@@ -1,0 +1,3657 @@
+{
+  "metadata": {
+    "statementId": "DEMO-STMT-376731-20240229",
+    "demo": true,
+    "planName": "TEST COMPANY 401(K) RETIREMENT PLAN",
+    "planNumber": "376731",
+    "planNumberDisplay": "PLAN #376731",
+    "periodStart": {
+      "kind": "date",
+      "iso": "2024-01-01",
+      "src": "January 1, 2024"
+    },
+    "periodEnd": {
+      "kind": "date",
+      "iso": "2024-02-29",
+      "src": "February 29, 2024"
+    },
+    "periodLong": "January 1, 2024 - February 29, 2024",
+    "periodShort": "1/1/24 - 2/29/24",
+    "periodFooter": "01/01/24 - 02/29/24",
+    "periodIsoLabel": "01/01/2024 - 02/29/2024",
+    "participant": {
+      "firstName": "Sidney",
+      "lastName": "Sample",
+      "fullName": "Sidney Sample",
+      "mailingAddress": [
+        "1234 Sample Avenue",
+        "Testingham, IN 12345"
+      ],
+      "templateAddressee": {
+        "name": "FirstName LastName",
+        "address": [
+          "Address Street",
+          "Address City, ST, 00000"
+        ]
+      }
+    },
+    "contacts": {
+      "manageAccount": {
+        "label": "MANAGE YOUR ACCOUNT:",
+        "display": "www.fisglobal.com",
+        "href": "https://www.fisglobal.com"
+      },
+      "email": {
+        "label": "EMAIL US:",
+        "display": "customerservice@fisglobal.com",
+        "href": "mailto:customerservice@fisglobal.com"
+      },
+      "phone": {
+        "label": "CALL CUSTOMER SERVICE:",
+        "display": "1-800-555-5555",
+        "href": "tel:18005555555"
+      },
+      "financialProfessionalsHeading": "YOUR FINANCIAL PROFESSIONALS",
+      "financialProfessionals": [
+        {
+          "id": "nancy-wellons",
+          "name": "Nancy Wellons",
+          "srcName": "NANCY WELLONS",
+          "phone": "(555) 666-7788",
+          "email": "n.wellons@yourbank.com"
+        },
+        {
+          "id": "jamie-ireland",
+          "name": "Jamie Ireland",
+          "srcName": "JAMIE IRELAND",
+          "phone": "(555) 666-7788",
+          "email": "j.ireland@yourbank.com"
+        }
+      ],
+      "accountAccess": {
+        "heading": "ACCESS YOUR ACCOUNT",
+        "copy": "Scan to review balances, update your deferral election and download statements.",
+        "display": "participants.frp.com/login",
+        "href": "https://participants.frp.com/login"
+      }
+    },
+    "message": {
+      "label": "User-defined message",
+      "managedIn": "Managed in CompliChain®",
+      "body": "Placeholder for plan-sponsor messaging. Language for this block is stored and edited in CompliChain®, so it can change every cycle without touching the statement design.",
+      "source": {
+        "page": 1,
+        "section": "User-defined message"
+      },
+      "isTemplatePlaceholder": true
+    },
+    "templatePlaceholders": {
+      "yourLogo": "YOUR LOGO",
+      "coBranded": "CO-BRANDED",
+      "subtitle": "Subtitle Goes Here",
+      "lorem": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis commodo consequat."
+    },
+    "footerLabel": "01/01/24 - 02/29/24  STATEMENT",
+    "corePageCount": 8
+  },
+  "balances": {
+    "heading": "ACCOUNT AT A GLANCE",
+    "statementDateHeading": "STATEMENT DATE",
+    "periodLabel": "Statement period:",
+    "rowLabels": {
+      "beginning": "Beginning Balance",
+      "contributions": "Contributions",
+      "withdrawals": "Withdrawals",
+      "feesAndCredits": "Fees and Fee Credits",
+      "otherActivity": "Other Activity",
+      "earnings": "Earnings"
+    },
+    "source": {
+      "page": 1,
+      "section": "Account at a Glance"
+    },
+    "statementDateLabel": "1/1/24 - 2/29/24",
+    "beginning": {
+      "kind": "money",
+      "minor": 41076367,
+      "src": "$410,763.67"
+    },
+    "contributions": {
+      "kind": "money",
+      "minor": 0,
+      "src": "$0.00"
+    },
+    "withdrawals": {
+      "kind": "money",
+      "minor": 0,
+      "src": "$0.00"
+    },
+    "feesAndCredits": {
+      "kind": "money",
+      "minor": -4109,
+      "src": "($41.09)"
+    },
+    "otherActivity": {
+      "kind": "money",
+      "minor": 0,
+      "src": "$0.00"
+    },
+    "earnings": {
+      "kind": "money",
+      "minor": 716795,
+      "src": "$7,167.95"
+    },
+    "ending": {
+      "kind": "money",
+      "minor": 41789053,
+      "src": "$417,890.53"
+    },
+    "endingLabel": "ENDING BALANCE",
+    "rateOfReturn": {
+      "heading": "ACCOUNT RATE OF RETURN",
+      "quarter": {
+        "kind": "pct",
+        "value": 1.74,
+        "src": "1.74%"
+      },
+      "quarterLabel": "This Quarter",
+      "ytd": {
+        "kind": "pct",
+        "value": 1.74,
+        "src": "1.74%"
+      },
+      "ytdLabel": "Year-to-Date"
+    }
+  },
+  "allocationSummary": {
+    "heading": "INVESTMENT ALLOCATION SUMMARY",
+    "items": [
+      {
+        "id": "equity",
+        "label": "Equity",
+        "pct": {
+          "kind": "pct",
+          "value": 29.37,
+          "src": "29.37%"
+        }
+      },
+      {
+        "id": "fixed-income",
+        "label": "Fixed Income",
+        "pct": {
+          "kind": "pct",
+          "value": 22.29,
+          "src": "22.29%"
+        }
+      },
+      {
+        "id": "international-equity",
+        "label": "International Equity",
+        "pct": {
+          "kind": "pct",
+          "value": 14.65,
+          "src": "14.65%"
+        }
+      },
+      {
+        "id": "cash",
+        "label": "Cash",
+        "pct": {
+          "kind": "pct",
+          "value": 11.09,
+          "src": "11.09%"
+        }
+      },
+      {
+        "id": "real-estate",
+        "label": "Real Estate",
+        "pct": {
+          "kind": "pct",
+          "value": 22.6,
+          "src": "22.60%"
+        }
+      }
+    ],
+    "source": {
+      "page": 1,
+      "section": "Investment Allocation Summary"
+    }
+  },
+  "contributionSourceActivity": {
+    "heading": "ACCOUNT SUMMARY BY CONTRIBUTION SOURCE",
+    "firstColumnLabel": "Contribution Source",
+    "columns": {
+      "beginning": "Balance on 1/1/24",
+      "contributions": "Contributions",
+      "withdrawals": "Withdrawals",
+      "feesAndCredits": "Fees and Fee Credits",
+      "otherActivity": "Other Activity",
+      "earnings": "Earnings",
+      "ending": "Balance on 2/29/24"
+    },
+    "rows": [
+      {
+        "id": "src-activity:employee-salary-reduction",
+        "label": "Employee Salary Reduction",
+        "beginning": {
+          "kind": "money",
+          "minor": 2077391,
+          "src": "$20,773.91"
+        },
+        "contributions": {
+          "kind": "money",
+          "minor": 0,
+          "src": "$0.00"
+        },
+        "withdrawals": {
+          "kind": "money",
+          "minor": 0,
+          "src": "$0.00"
+        },
+        "feesAndCredits": {
+          "kind": "money",
+          "minor": 0,
+          "src": "$0.00"
+        },
+        "otherActivity": {
+          "kind": "money",
+          "minor": 0,
+          "src": "$0.00"
+        },
+        "earnings": {
+          "kind": "money",
+          "minor": -2077387,
+          "src": "($20,773.87)"
+        },
+        "ending": {
+          "kind": "money",
+          "minor": 4,
+          "src": "$0.04"
+        }
+      },
+      {
+        "id": "src-activity:employer-match",
+        "label": "Employer Match",
+        "beginning": {
+          "kind": "money",
+          "minor": 43160,
+          "src": "$431.60"
+        },
+        "contributions": {
+          "kind": "money",
+          "minor": 0,
+          "src": "$0.00"
+        },
+        "withdrawals": {
+          "kind": "money",
+          "minor": 0,
+          "src": "$0.00"
+        },
+        "feesAndCredits": {
+          "kind": "money",
+          "minor": 0,
+          "src": "$0.00"
+        },
+        "otherActivity": {
+          "kind": "money",
+          "minor": 0,
+          "src": "$0.00"
+        },
+        "earnings": {
+          "kind": "money",
+          "minor": -43158,
+          "src": "($431.58)"
+        },
+        "ending": {
+          "kind": "money",
+          "minor": 2,
+          "src": "$0.02"
+        }
+      },
+      {
+        "id": "src-activity:employer-safe-harbor-match",
+        "label": "Employer Safe Harbor Match",
+        "beginning": {
+          "kind": "money",
+          "minor": 498308,
+          "src": "$4,983.08"
+        },
+        "contributions": {
+          "kind": "blank",
+          "src": ""
+        },
+        "withdrawals": {
+          "kind": "money",
+          "minor": 0,
+          "src": "$0"
+        },
+        "feesAndCredits": {
+          "kind": "money",
+          "minor": 0,
+          "src": "$0"
+        },
+        "otherActivity": {
+          "kind": "money",
+          "minor": 0,
+          "src": "$0"
+        },
+        "earnings": {
+          "kind": "money",
+          "minor": -498304,
+          "src": "($4,983.04)"
+        },
+        "ending": {
+          "kind": "money",
+          "minor": 4,
+          "src": "$0.04"
+        }
+      }
+    ],
+    "total": {
+      "label": "TOTAL",
+      "beginning": {
+        "kind": "money",
+        "minor": 2618859,
+        "src": "$26,188.59"
+      },
+      "contributions": {
+        "kind": "money",
+        "minor": 0,
+        "src": "$0.00"
+      },
+      "withdrawals": {
+        "kind": "money",
+        "minor": 0,
+        "src": "$0.00"
+      },
+      "feesAndCredits": {
+        "kind": "money",
+        "minor": 0,
+        "src": "$0.00"
+      },
+      "otherActivity": {
+        "kind": "money",
+        "minor": 0,
+        "src": "$0.00"
+      },
+      "earnings": {
+        "kind": "money",
+        "minor": -2618849,
+        "src": "($26,188.49)"
+      },
+      "ending": {
+        "kind": "money",
+        "minor": 10,
+        "src": "$0.10"
+      }
+    },
+    "note": "This section summarizes your account activity by contribution source during the reporting period.",
+    "source": {
+      "page": 2,
+      "section": "Account Summary by Contribution Source"
+    }
+  },
+  "investmentActivity": {
+    "heading": "ACCOUNT SUMMARY BY INVESTMENT",
+    "firstColumnLabel": "Investment",
+    "columns": {
+      "beginning": "Balance on 1/1/24",
+      "contributions": "Contributions",
+      "withdrawals": "Withdrawals",
+      "feesAndCredits": "Fees and Fee Credits",
+      "otherActivity": "Other Activity",
+      "earnings": "Earnings",
+      "ending": "Balance on 2/29/24"
+    },
+    "rows": [
+      {
+        "id": "inv-activity:vanguard-value-index",
+        "label": "Vanguard Value Index, Admiral Shares",
+        "beginning": {
+          "kind": "money",
+          "minor": 380725,
+          "src": "$3,807.25"
+        },
+        "contributions": {
+          "kind": "money",
+          "minor": 0,
+          "src": "$0.00"
+        },
+        "withdrawals": {
+          "kind": "money",
+          "minor": 0,
+          "src": "$0.00"
+        },
+        "feesAndCredits": {
+          "kind": "money",
+          "minor": 0,
+          "src": "$0.00"
+        },
+        "otherActivity": {
+          "kind": "money",
+          "minor": 0,
+          "src": "$0.00"
+        },
+        "earnings": {
+          "kind": "money",
+          "minor": -380725,
+          "src": "($3,807.25)"
+        },
+        "ending": {
+          "kind": "money",
+          "minor": 0,
+          "src": "$0.00"
+        }
+      },
+      {
+        "id": "inv-activity:vanguard-500-index",
+        "label": "Vanguard 500 Index, Admiral Shares",
+        "beginning": {
+          "kind": "money",
+          "minor": 788660,
+          "src": "$7,886.60"
+        },
+        "contributions": {
+          "kind": "money",
+          "minor": 0,
+          "src": "$0.00"
+        },
+        "withdrawals": {
+          "kind": "money",
+          "minor": 0,
+          "src": "$0.00"
+        },
+        "feesAndCredits": {
+          "kind": "money",
+          "minor": 0,
+          "src": "$0.00"
+        },
+        "otherActivity": {
+          "kind": "money",
+          "minor": 0,
+          "src": "$0.00"
+        },
+        "earnings": {
+          "kind": "money",
+          "minor": -788653,
+          "src": "($7,886.53)"
+        },
+        "ending": {
+          "kind": "money",
+          "minor": 7,
+          "src": "$0.07"
+        }
+      },
+      {
+        "id": "inv-activity:vanguard-growth-index",
+        "label": "Vanguard Growth Index, Admiral Shares",
+        "beginning": {
+          "kind": "money",
+          "minor": 410235,
+          "src": "$4,102.35"
+        },
+        "contributions": {
+          "kind": "blank",
+          "src": ""
+        },
+        "withdrawals": {
+          "kind": "money",
+          "minor": 0,
+          "src": "$0"
+        },
+        "feesAndCredits": {
+          "kind": "money",
+          "minor": 0,
+          "src": "$0"
+        },
+        "otherActivity": {
+          "kind": "money",
+          "minor": 0,
+          "src": "$0"
+        },
+        "earnings": {
+          "kind": "money",
+          "minor": -410235,
+          "src": "($4,102.35)"
+        },
+        "ending": {
+          "kind": "money",
+          "minor": 0,
+          "src": "$0.00"
+        }
+      },
+      {
+        "id": "inv-activity:vanguard-mid-cap-index",
+        "label": "Vanguard Mid-Cap Index, Admiral Shares",
+        "beginning": {
+          "kind": "money",
+          "minor": 516223,
+          "src": "$5,162.23"
+        },
+        "contributions": {
+          "kind": "money",
+          "minor": 0,
+          "src": "$0.00"
+        },
+        "withdrawals": {
+          "kind": "money",
+          "minor": 0,
+          "src": "$0.00"
+        },
+        "feesAndCredits": {
+          "kind": "money",
+          "minor": 0,
+          "src": "$0.00"
+        },
+        "otherActivity": {
+          "kind": "money",
+          "minor": 0,
+          "src": "$0.00"
+        },
+        "earnings": {
+          "kind": "money",
+          "minor": -516220,
+          "src": "($5,162.20)"
+        },
+        "ending": {
+          "kind": "money",
+          "minor": 3,
+          "src": "$0.03"
+        }
+      },
+      {
+        "id": "inv-activity:vanguard-small-cap-index",
+        "label": "Vanguard Small Cap Index, Admiral Shares",
+        "beginning": {
+          "kind": "money",
+          "minor": 523016,
+          "src": "$5,230.16"
+        },
+        "contributions": {
+          "kind": "blank",
+          "src": ""
+        },
+        "withdrawals": {
+          "kind": "money",
+          "minor": 0,
+          "src": "$0"
+        },
+        "feesAndCredits": {
+          "kind": "money",
+          "minor": 0,
+          "src": "$0"
+        },
+        "otherActivity": {
+          "kind": "money",
+          "minor": 0,
+          "src": "$0"
+        },
+        "earnings": {
+          "kind": "money",
+          "minor": -523016,
+          "src": "($5,230.16)"
+        },
+        "ending": {
+          "kind": "money",
+          "minor": 0,
+          "src": "$0.00"
+        }
+      }
+    ],
+    "total": {
+      "label": "TOTAL",
+      "beginning": {
+        "kind": "money",
+        "minor": 2618859,
+        "src": "$26,188.59"
+      },
+      "contributions": {
+        "kind": "money",
+        "minor": 0,
+        "src": "$0.00"
+      },
+      "withdrawals": {
+        "kind": "money",
+        "minor": 0,
+        "src": "$0.00"
+      },
+      "feesAndCredits": {
+        "kind": "money",
+        "minor": 0,
+        "src": "$0.00"
+      },
+      "otherActivity": {
+        "kind": "money",
+        "minor": 0,
+        "src": "$0.00"
+      },
+      "earnings": {
+        "kind": "money",
+        "minor": -2618849,
+        "src": "($26,188.49)"
+      },
+      "ending": {
+        "kind": "money",
+        "minor": 10,
+        "src": "$0.10"
+      }
+    },
+    "note": "This section summarizes your account activity by investment during the reporting period.",
+    "source": {
+      "page": 2,
+      "section": "Account Summary by Investment"
+    }
+  },
+  "holdings": {
+    "heading": "ACCOUNT DETAIL BY INVESTMENT WITH SHARE DETAILS",
+    "columns": {
+      "ticker": "TICKER",
+      "shares": "SHARES",
+      "price": "PRICE PER SHARES",
+      "ending": "ENDING BALANCE",
+      "pctOfTotal": "% OF TOTAL"
+    },
+    "rows": [
+      {
+        "id": "wacpx",
+        "name": "Western Asset Core Plus Bond, Class I",
+        "srcName": "WESTERN ASSET CORE PLUS BOND, CLASS I",
+        "ticker": "WACPX",
+        "shares": {
+          "kind": "num",
+          "value": 11778.732,
+          "src": "11,778.732"
+        },
+        "price": {
+          "kind": "money",
+          "minor": 1042,
+          "src": "$10.42"
+        },
+        "ending": {
+          "kind": "money",
+          "minor": 12273439,
+          "src": "$122,734.39"
+        },
+        "pctOfTotal": {
+          "kind": "pct",
+          "value": 29.37,
+          "src": "29.37%"
+        },
+        "category": "equity"
+      },
+      {
+        "id": "trpix",
+        "name": "T. Rowe Price Value Fund, I Class",
+        "srcName": "T. ROWE PRICE VALUE FUND, I CLASS",
+        "ticker": "TRPIX",
+        "shares": {
+          "kind": "num",
+          "value": 2017.059,
+          "src": "2,017.059"
+        },
+        "price": {
+          "kind": "money",
+          "minor": 4618,
+          "src": "$46.18"
+        },
+        "ending": {
+          "kind": "money",
+          "minor": 9314778,
+          "src": "$93,147.78"
+        },
+        "pctOfTotal": {
+          "kind": "pct",
+          "value": 22.29,
+          "src": "22.29%"
+        },
+        "category": "fixed-income"
+      },
+      {
+        "id": "tbcix",
+        "name": "T. Rowe Price Blue Chip Growth Fund, I Class",
+        "srcName": "T. ROWE PRICE BLUE CHIP GROWTH FUND, I CLASS",
+        "ticker": "TBCIX",
+        "shares": {
+          "kind": "num",
+          "value": 365.848,
+          "src": "365.848"
+        },
+        "price": {
+          "kind": "money",
+          "minor": 16734,
+          "src": "$167.34"
+        },
+        "ending": {
+          "kind": "money",
+          "minor": 6122100,
+          "src": "$61,221.00"
+        },
+        "pctOfTotal": {
+          "kind": "pct",
+          "value": 14.65,
+          "src": "14.65%"
+        },
+        "category": "fixed-income"
+      },
+      {
+        "id": "flpsx",
+        "name": "Fidelity Low-Priced Stock",
+        "srcName": "FIDELITY LOW-PRICED STOCK",
+        "ticker": "FLPSX",
+        "shares": {
+          "kind": "num",
+          "value": 893.466,
+          "src": "893.466"
+        },
+        "price": {
+          "kind": "money",
+          "minor": 5187,
+          "src": "$51.87"
+        },
+        "ending": {
+          "kind": "money",
+          "minor": 4634408,
+          "src": "$46,344.08"
+        },
+        "pctOfTotal": {
+          "kind": "pct",
+          "value": 11.09,
+          "src": "11.09%"
+        },
+        "category": "international-equity"
+      },
+      {
+        "id": "otchx",
+        "name": "MFS Mid Cap Growth Fund, Class R3",
+        "srcName": "MFS MID CAP GROWTH FUND, CLASS R3",
+        "ticker": "OTCHX",
+        "shares": {
+          "kind": "num",
+          "value": 1150.33,
+          "src": "1,150.330"
+        },
+        "price": {
+          "kind": "money",
+          "minor": 2216,
+          "src": "$22.16"
+        },
+        "ending": {
+          "kind": "money",
+          "minor": 2549131,
+          "src": "$25,491.31"
+        },
+        "pctOfTotal": {
+          "kind": "pct",
+          "value": 6.1,
+          "src": "6.10%"
+        },
+        "category": "cash"
+      },
+      {
+        "id": "espnx",
+        "name": "Allspring Special Small Cap Value Fund, Institutional Class",
+        "srcName": "ALLSPRING SPECIAL SMALL CAP VALUE FUND, INSTITUTIONAL CLASS",
+        "ticker": "ESPNX",
+        "shares": {
+          "kind": "num",
+          "value": 674.638,
+          "src": "674.638"
+        },
+        "price": {
+          "kind": "money",
+          "minor": 3475,
+          "src": "$34.75"
+        },
+        "ending": {
+          "kind": "money",
+          "minor": 2344367,
+          "src": "$23,443.67"
+        },
+        "pctOfTotal": {
+          "kind": "pct",
+          "value": 5.61,
+          "src": "5.61%"
+        },
+        "category": "real-estate"
+      },
+      {
+        "id": "jattx",
+        "name": "Janus Henderson Triton Fund, Class T",
+        "srcName": "JANUS HENDERSON TRITON FUND, CLASS T",
+        "ticker": "JATTX",
+        "shares": {
+          "kind": "num",
+          "value": 789.862,
+          "src": "789.862"
+        },
+        "price": {
+          "kind": "money",
+          "minor": 2894,
+          "src": "$28.94"
+        },
+        "ending": {
+          "kind": "money",
+          "minor": 2285861,
+          "src": "$22,858.61"
+        },
+        "pctOfTotal": {
+          "kind": "pct",
+          "value": 5.47,
+          "src": "5.47%"
+        },
+        "category": "real-estate"
+      },
+      {
+        "id": "dfstx",
+        "name": "DFA US Small Cap, Institutional Class",
+        "srcName": "DFA US SMALL CAP, INSTITUTIONAL CLASS",
+        "ticker": "DFSTX",
+        "shares": {
+          "kind": "num",
+          "value": 531.558,
+          "src": "531.558"
+        },
+        "price": {
+          "kind": "money",
+          "minor": 4261,
+          "src": "$42.61"
+        },
+        "ending": {
+          "kind": "money",
+          "minor": 2264969,
+          "src": "$22,649.69"
+        },
+        "pctOfTotal": {
+          "kind": "pct",
+          "value": 5.42,
+          "src": "5.42%"
+        },
+        "category": "real-estate"
+      }
+    ],
+    "loans": {
+      "label": "Loans",
+      "ticker": {
+        "kind": "dash",
+        "src": "–"
+      },
+      "shares": {
+        "kind": "dash",
+        "src": "–"
+      },
+      "price": {
+        "kind": "dash",
+        "src": "–"
+      },
+      "ending": {
+        "kind": "money",
+        "minor": 2441961,
+        "src": "$24,419.61"
+      },
+      "pctOfTotal": {
+        "kind": "dash",
+        "src": "–"
+      }
+    },
+    "investmentTotal": {
+      "label": "INVESTMENT TOTAL",
+      "value": {
+        "kind": "money",
+        "minor": 41789053,
+        "src": "$417,890.53"
+      }
+    },
+    "accountTotal": {
+      "label": "ACCOUNT TOTAL INCLUDING LOANS",
+      "value": {
+        "kind": "money",
+        "minor": 44231014,
+        "src": "$442,310.14"
+      }
+    },
+    "note": "Balances shown are as of the close of business on the last day of the statement period. Share prices are the closing net asset value on that date.",
+    "source": {
+      "page": 3,
+      "section": "Account Detail by Investment with Share Details"
+    }
+  },
+  "allocation": {
+    "heading": "ASSET ALLOCATION",
+    "headerValue": {
+      "kind": "money",
+      "minor": 41789053,
+      "src": "$417,890.53"
+    },
+    "columns": {
+      "value": "VALUE",
+      "allocation": "ALLOCATION",
+      "election": "INVESTMENT ELECTION",
+      "deviation": "ALLOCATION DEVIATION (%)"
+    },
+    "groups": [
+      {
+        "category": "equity",
+        "srcLabel": "EQUITY",
+        "rows": [
+          {
+            "holdingId": "wacpx",
+            "value": {
+              "kind": "money",
+              "minor": 12273439,
+              "src": "$122,734.39"
+            },
+            "allocation": {
+              "kind": "pct",
+              "value": 29.37,
+              "src": "29.37%"
+            },
+            "election": {
+              "kind": "pct",
+              "value": 30,
+              "src": "30%"
+            },
+            "deviation": {
+              "kind": "pct",
+              "value": -0.63,
+              "src": "(0.63%)"
+            }
+          }
+        ]
+      },
+      {
+        "category": "fixed-income",
+        "srcLabel": "FIXED INCOME",
+        "rows": [
+          {
+            "holdingId": "trpix",
+            "value": {
+              "kind": "money",
+              "minor": 9314778,
+              "src": "$93,147.78"
+            },
+            "allocation": {
+              "kind": "pct",
+              "value": 22.29,
+              "src": "22.29%"
+            },
+            "election": {
+              "kind": "pct",
+              "value": 22,
+              "src": "22%"
+            },
+            "deviation": {
+              "kind": "pct",
+              "value": 0.29,
+              "src": "0.29%"
+            }
+          },
+          {
+            "holdingId": "tbcix",
+            "value": {
+              "kind": "money",
+              "minor": 6122100,
+              "src": "$61,221.00"
+            },
+            "allocation": {
+              "kind": "pct",
+              "value": 14.65,
+              "src": "14.65%"
+            },
+            "election": {
+              "kind": "pct",
+              "value": 15,
+              "src": "15%"
+            },
+            "deviation": {
+              "kind": "pct",
+              "value": -0.35,
+              "src": "(0.35%)"
+            }
+          }
+        ]
+      },
+      {
+        "category": "international-equity",
+        "srcLabel": "INTERNATIONAL EQUITY",
+        "rows": [
+          {
+            "holdingId": "flpsx",
+            "value": {
+              "kind": "money",
+              "minor": 4634408,
+              "src": "$46,344.08"
+            },
+            "allocation": {
+              "kind": "pct",
+              "value": 11.09,
+              "src": "11.09%"
+            },
+            "election": {
+              "kind": "pct",
+              "value": 11,
+              "src": "11%"
+            },
+            "deviation": {
+              "kind": "pct",
+              "value": 0.09,
+              "src": "0.09%"
+            }
+          }
+        ]
+      },
+      {
+        "category": "cash",
+        "srcLabel": "CASH",
+        "rows": [
+          {
+            "holdingId": "otchx",
+            "value": {
+              "kind": "money",
+              "minor": 2549131,
+              "src": "$25,491.31"
+            },
+            "allocation": {
+              "kind": "pct",
+              "value": 6.1,
+              "src": "6.10%"
+            },
+            "election": {
+              "kind": "pct",
+              "value": 6,
+              "src": "6%"
+            },
+            "deviation": {
+              "kind": "pct",
+              "value": 0.1,
+              "src": "0.10%"
+            }
+          }
+        ]
+      },
+      {
+        "category": "real-estate",
+        "srcLabel": "REAL ESTATE",
+        "rows": [
+          {
+            "holdingId": "espnx",
+            "value": {
+              "kind": "money",
+              "minor": 2344367,
+              "src": "$23,443.67"
+            },
+            "allocation": {
+              "kind": "pct",
+              "value": 5.61,
+              "src": "5.61%"
+            },
+            "election": {
+              "kind": "pct",
+              "value": 5.33,
+              "src": "5.33%"
+            },
+            "deviation": {
+              "kind": "pct",
+              "value": 0.28,
+              "src": "0.28%"
+            }
+          },
+          {
+            "holdingId": "jattx",
+            "value": {
+              "kind": "money",
+              "minor": 2285861,
+              "src": "$22,858.61"
+            },
+            "allocation": {
+              "kind": "pct",
+              "value": 5.47,
+              "src": "5.47%"
+            },
+            "election": {
+              "kind": "pct",
+              "value": 5.33,
+              "src": "5.33%"
+            },
+            "deviation": {
+              "kind": "pct",
+              "value": 0.14,
+              "src": "0.14%"
+            }
+          },
+          {
+            "holdingId": "dfstx",
+            "value": {
+              "kind": "money",
+              "minor": 2264969,
+              "src": "$22,649.69"
+            },
+            "allocation": {
+              "kind": "pct",
+              "value": 5.42,
+              "src": "5.42%"
+            },
+            "election": {
+              "kind": "pct",
+              "value": 5.33,
+              "src": "5.33%"
+            },
+            "deviation": {
+              "kind": "pct",
+              "value": 0.09,
+              "src": "0.09%"
+            }
+          }
+        ]
+      }
+    ],
+    "total": {
+      "label": "TOTAL",
+      "value": {
+        "kind": "money",
+        "minor": 41789053,
+        "src": "$417,890.53"
+      },
+      "allocation": {
+        "kind": "dash",
+        "src": "–"
+      },
+      "election": {
+        "kind": "pct",
+        "value": 100,
+        "src": "100%"
+      },
+      "deviation": {
+        "kind": "dash",
+        "src": "–"
+      }
+    },
+    "note": "Allocation is the percentage of your total account held in each investment on the last day of the statement period. Investment election is your target allocation for future contributions, and deviation is the difference between the two.",
+    "source": {
+      "page": 3,
+      "section": "Asset Allocation"
+    }
+  },
+  "lifetimeIncome": {
+    "heading": "YOUR LIFETIME INCOME ESTIMATE",
+    "intro": "Your plan administrator has directed us, your plan's recordkeeper, to provide a lifetime income estimate that shows how much monthly income you could collect at retirement. This statement provides you with information about how much monthly income you could collect at retirement based on your current account balance. The estimated monthly payments in this statement are for illustrative purposes only; they are not a guarantee. Having this information now may help you plan how much money to save for your retirement.",
+    "balance": {
+      "value": {
+        "kind": "money",
+        "minor": 41789053,
+        "src": "$417,890.53"
+      },
+      "label": "ACCOUNT BALANCE AS OF",
+      "asOf": "FEBRUARY 29, 2024"
+    },
+    "singleLife": {
+      "monthly": {
+        "kind": "money",
+        "minor": 250734,
+        "src": "$2,507.34"
+      },
+      "label": "MONTHLY PAYMENT AT 67",
+      "formLabel": "SINGLE LIFE ANNUITY"
+    },
+    "jointSurvivor": {
+      "monthly": {
+        "kind": "money",
+        "minor": 208945,
+        "src": "$2,089.45"
+      },
+      "label": "MONTHLY PAYMENT AT 67",
+      "formLabel": "QUALIFIED JOINT & 100% SURVIVOR ANNUITY"
+    },
+    "paymentAge": 67,
+    "explanationIntro": "Your account balance is shown in the table as of February 29, 2024. These estimates show how much money you could receive each month if you were to receive payments in one of the following two payment forms:",
+    "definitions": [
+      {
+        "id": "single-life",
+        "number": "1.",
+        "text": "A single life annuity is an arrangement that pays you a fixed amount of money each month for the rest of your life. Following your death, no further payments would be made to your spouse or heirs. If you receive payments in this form, we estimate you would receive the amount shown in the table per month starting at retirement."
+      },
+      {
+        "id": "joint-survivor",
+        "number": "2.",
+        "text": "A qualified joint and 100% survivor annuity is an arrangement that pays you and your spouse a fixed monthly payment for the rest of your joint lives. In addition, after your death, this type of annuity would continue to provide the same fixed monthly payments to your surviving spouse for their life. If you receive payments in this form, we estimate you would receive the same amount per month. An annuity with a lower survivor percentage may be available, and reducing the survivor percentage (below 100%) would increase monthly payments during your lifetime, but would decrease what your surviving spouse would receive after your death."
+      }
+    ],
+    "source": {
+      "page": 4,
+      "section": "Your Lifetime Income Estimate"
+    }
+  },
+  "lifetimeAssumptions": {
+    "heading": "LIFETIME INCOME ILLUSTRATIONS",
+    "periodLabel": "STATEMENT PERIOD: 01/01/2024 - 02/29/2024",
+    "intro": "The following information is to help you understand these estimated monthly payments.",
+    "sections": [
+      {
+        "id": "assumed",
+        "heading": "WHAT WE ASSUMED",
+        "paragraphs": [
+          "The estimated monthly payments in this statement assume that your account balance is 100% vested and, if you have taken a loan from the plan and you are not in default, the loan has been fully repaid.",
+          "If you have taken a loan from the plan and the loan was defaulted, the estimated monthly payments in this statement do not include the value of your deemed loans.",
+          "The estimated monthly payments in this statement assume that payments begin 02/29/2024 and that you are 67 on this date. Monthly payments beginning at a younger age would be lower than shown since payments would be made over more years. Monthly payments beginning at an older age would be higher than shown since they would be made over fewer years.",
+          "The estimated monthly payments for a qualified joint and 100% survivor annuity in this statement assume that you are married with a spouse who is the same age as you (even if you do not currently have a spouse, or if you have a spouse who is a different age). If your spouse is younger, monthly payments would be lower than shown since they would be expected to be paid over more years. If your spouse is older, monthly payments would be higher than shown since they would be expected to be paid over fewer years.",
+          "The estimated monthly payments in this statement are based on an interest rate of 3.87%, which is the 10-year constant maturity U.S. Treasury securities yield rate as of 02/01/2024, as required by federal regulations. This rate fluctuates based on market conditions. The lower the interest rate, the lower your monthly payment; the higher the interest rate, the higher your monthly payment.",
+          "The estimated monthly payments in this statement are based on the gender-neutral mortality table specified in section 417(e)(3)(B) of the Internal Revenue Code, as required by federal regulations. That table reflects the average life expectancy of the population as a whole, and is applied without regard to your health, your family history, or your gender. Because your own life expectancy may be longer or shorter than average, the payments an insurance company would actually offer you may differ from the amounts shown.",
+          "The estimated monthly payments in this statement are shown in today's dollars and are not adjusted for inflation. A fixed monthly payment that begins at the amount shown would buy less over time as prices rise, so the purchasing power of these payments would decline throughout your retirement."
+        ]
+      },
+      {
+        "id": "not-tell",
+        "heading": "WHAT THESE ESTIMATES DO NOT TELL YOU",
+        "paragraphs": [
+          "Your actual retirement income may be materially different from the amounts shown.",
+          "These illustrations are not a guarantee, a promise of benefits, or a prediction of what you will receive. The monthly income you can actually buy at retirement will depend on your account balance and investment returns between now and then, your age and marital status when payments begin, interest rates and insurer pricing at that time, and the annuity contracts available to you. The estimates also do not reflect any fees, commissions, or expenses an insurer may charge, or any taxes you may owe on the payments.",
+          "This plan is not required to offer an annuity, and showing these estimates does not mean the plan offers one. If your plan does not offer an annuity distribution option, you would need to purchase an annuity outside the plan, on the terms available to you at that time. Neither your employer, the plan, nor your recordkeeper guarantees the amounts shown."
+        ]
+      },
+      {
+        "id": "differs",
+        "heading": "HOW THIS DIFFERS FROM THE RETIREMENT READINESS PROJECTION",
+        "paragraphs": [
+          "If your statement includes a Projected Retirement Income section in the appendix, that projection is a separate retirement readiness estimate produced by a planning tool. It uses different assumptions from this illustration — including future contributions, an assumed rate of investment return, your chosen retirement age, outside assets, and estimated Social Security benefits. The estimates on this page use only your current account balance together with the interest rate and mortality assumptions prescribed by federal regulation. The two figures are calculated on different bases and are not comparable."
+        ]
+      }
+    ],
+    "interestRate": {
+      "kind": "pct",
+      "value": 3.87,
+      "src": "3.87%"
+    },
+    "treasuryDate": "02/01/2024",
+    "paymentStart": "02/29/2024",
+    "mortalityTable": "section 417(e)(3)(B) of the Internal Revenue Code",
+    "source": {
+      "page": 5,
+      "section": "Lifetime Income Illustrations"
+    }
+  },
+  "retirementReadiness": {
+    "heading": "PROJECTED RETIREMENT INCOME",
+    "projectedLabel": "PROJECTED INCOME/MO",
+    "projectedMonthly": {
+      "kind": "money",
+      "minor": 282100,
+      "src": "$2,821"
+    },
+    "goalLabel": "Goal: $5,000/mo",
+    "goalMonthly": {
+      "kind": "money",
+      "minor": 500000,
+      "src": "$5,000"
+    },
+    "progressPct": 56,
+    "progressLabel": "56% OF THE WAY THERE!",
+    "chart": {
+      "axis": [
+        "$5,000",
+        "$3,750",
+        "$2,500",
+        "$1,250",
+        "$0"
+      ],
+      "barLabel": "Projected Retirement Income",
+      "series": [
+        {
+          "id": "plan",
+          "label": "This Retirement Plan"
+        },
+        {
+          "id": "outside",
+          "label": "Other Outside Assets"
+        },
+        {
+          "id": "other",
+          "label": "Other income sources including Social Security"
+        }
+      ],
+      "visualFractions": {
+        "plan": 0.3645,
+        "outside": 0.0692,
+        "other": 0.1205
+      }
+    },
+    "improvement": {
+      "prompt": "Would you like to improve your retirement income projection?",
+      "text": "You can increase your monthly projected income from $2,821 to $3,100 by contributing an extra $30 more each month.",
+      "from": {
+        "kind": "money",
+        "minor": 282100,
+        "src": "$2,821"
+      },
+      "to": {
+        "kind": "money",
+        "minor": 310000,
+        "src": "$3,100"
+      },
+      "extraMonthly": {
+        "kind": "money",
+        "minor": 3000,
+        "src": "$30"
+      },
+      "extraLabel": "$30 more"
+    },
+    "disclaimer": {
+      "heading": "THIS PROJECTION IS NOT THE FEDERALLY REQUIRED LIFETIME INCOME ILLUSTRATION",
+      "body": "The figures above are a retirement readiness estimate produced by a planning tool. They use different assumptions from the Lifetime Income Estimate in the core section of this statement — including your expected future contributions, an assumed rate of investment return, your target retirement age, outside assets you have entered, and estimated Social Security benefits. The Lifetime Income Estimate uses only your current account balance, with the interest rate and mortality assumptions prescribed by federal regulation. The two amounts are calculated on different bases, are not comparable, and neither is a guarantee."
+    },
+    "toolNote": "Update your retirement profile details using the My Retirement Analysis tool available to you on the participant web at www.myretirementplan.com.",
+    "toolUrl": {
+      "display": "www.myretirementplan.com",
+      "href": "https://www.myretirementplan.com"
+    },
+    "appendixNote": "Please refer to the appendix in this report for information about details and assumptions used in this computation.",
+    "source": {
+      "page": 9,
+      "section": "Projected Retirement Income"
+    }
+  },
+  "loans": {
+    "heading": "YOUR LOAN SUMMARY",
+    "columns": {
+      "status": "Loan Status",
+      "totalBorrowed": "Total Amount Borrowed",
+      "payment": "Payment Amount",
+      "payoffDate": "Payoff Date",
+      "balanceStart": "Loan Balance on 1/1/24",
+      "principalPaid": "Principal Paid This Period",
+      "interestPaid": "Interest Paid This Period",
+      "totalPaid": "Total Paid This Period",
+      "balanceEnd": "Loan Balance on 2/29/24"
+    },
+    "rows": [
+      {
+        "id": "loan:1",
+        "status": "ACTIVE",
+        "totalBorrowed": {
+          "kind": "money",
+          "minor": 841976,
+          "src": "$8,419.76"
+        },
+        "payment": {
+          "kind": "money",
+          "minor": 15358,
+          "src": "$153.58"
+        },
+        "payoffDate": {
+          "kind": "date",
+          "iso": "2026-09-30",
+          "src": "9/30/2026"
+        },
+        "balanceStart": {
+          "kind": "money",
+          "minor": 596491,
+          "src": "$5,964.91"
+        },
+        "principalPaid": {
+          "kind": "money",
+          "minor": 0,
+          "src": "$0.00"
+        },
+        "interestPaid": {
+          "kind": "money",
+          "minor": 0,
+          "src": "$0.00"
+        },
+        "totalPaid": {
+          "kind": "money",
+          "minor": 0,
+          "src": "$0.00"
+        },
+        "balanceEnd": {
+          "kind": "money",
+          "minor": 596491,
+          "src": "$5,964.91"
+        }
+      },
+      {
+        "id": "loan:2",
+        "status": "ACTIVE",
+        "totalBorrowed": {
+          "kind": "money",
+          "minor": 2000000,
+          "src": "$20,000.00"
+        },
+        "payment": {
+          "kind": "money",
+          "minor": 18515,
+          "src": "$185.15"
+        },
+        "payoffDate": {
+          "kind": "date",
+          "iso": "2026-02-10",
+          "src": "2/10/2026"
+        },
+        "balanceStart": {
+          "kind": "money",
+          "minor": 1936387,
+          "src": "$19,363.87"
+        },
+        "principalPaid": {
+          "kind": "money",
+          "minor": 90917,
+          "src": "$909.17"
+        },
+        "interestPaid": {
+          "kind": "money",
+          "minor": 20173,
+          "src": "$201.73"
+        },
+        "totalPaid": {
+          "kind": "money",
+          "minor": 111090,
+          "src": "$1,110.90"
+        },
+        "balanceEnd": {
+          "kind": "money",
+          "minor": 1845470,
+          "src": "$18,454.70"
+        }
+      }
+    ],
+    "total": {
+      "label": "TOTAL",
+      "totalBorrowed": {
+        "kind": "dash",
+        "src": "–"
+      },
+      "payment": {
+        "kind": "dash",
+        "src": "–"
+      },
+      "payoffDate": {
+        "kind": "dash",
+        "src": "–"
+      },
+      "balanceStart": {
+        "kind": "money",
+        "minor": 2432878,
+        "src": "$24,328.78"
+      },
+      "principalPaid": {
+        "kind": "money",
+        "minor": 1067410,
+        "src": "$10,674.10"
+      },
+      "interestPaid": {
+        "kind": "money",
+        "minor": 1067410,
+        "src": "$10,674.10"
+      },
+      "totalPaid": {
+        "kind": "money",
+        "minor": 1067410,
+        "src": "$10,674.10"
+      },
+      "balanceEnd": {
+        "kind": "money",
+        "minor": 2441961,
+        "src": "$24,419.61"
+      }
+    },
+    "note": "Loan repayments are deducted from your pay and returned to your account, including interest. An unpaid loan balance at termination may become a taxable distribution.",
+    "source": {
+      "page": 6,
+      "section": "Your Loan Summary"
+    }
+  },
+  "beneficiaries": {
+    "heading": "BENEFICIARIES",
+    "columns": {
+      "name": "Name",
+      "relationship": "Relationship",
+      "taxId": "Tax ID",
+      "dob": "Date of Birth",
+      "address": "Address",
+      "pct": "Percentage"
+    },
+    "primaryHeading": "Primary Name",
+    "primary": [
+      {
+        "id": "beneficiary:primary:jonathan-c-smith",
+        "name": "Jonathan C Smith",
+        "relationship": "Spouse",
+        "taxId": "2378",
+        "dob": {
+          "kind": "date",
+          "iso": "1970-01-24",
+          "src": "01/24/1970"
+        },
+        "address": [
+          "1234 Anyplace Rd",
+          "Anytown, OK 67895"
+        ],
+        "pct": {
+          "kind": "pct",
+          "value": 100,
+          "src": "100%"
+        }
+      }
+    ],
+    "primaryTotal": {
+      "label": "PRIMARY TOTAL",
+      "pct": {
+        "kind": "pct",
+        "value": 100,
+        "src": "100%"
+      }
+    },
+    "contingentHeading": "Contingent Name",
+    "contingent": [
+      {
+        "id": "beneficiary:contingent:christopher-t-westmoreland",
+        "name": "Christopher T. Westmoreland",
+        "relationship": "Child",
+        "taxId": "1256",
+        "dob": {
+          "kind": "date",
+          "iso": "1968-03-21",
+          "src": "03/21/1968"
+        },
+        "address": [
+          "1234 Anyplace Rd",
+          "Anytown, OK 67895"
+        ],
+        "pct": {
+          "kind": "pct",
+          "value": 50,
+          "src": "50%"
+        }
+      }
+    ],
+    "contingentTotal": {
+      "label": "CONTINGENT TOTAL",
+      "pct": {
+        "kind": "pct",
+        "value": 50,
+        "src": "50%"
+      }
+    },
+    "note": "Review your beneficiary designations after any marriage, divorce, birth, or death in your family. If you are married, your spouse is your beneficiary by law unless your spouse consents in writing to another designation.",
+    "source": {
+      "page": 6,
+      "section": "Beneficiaries"
+    }
+  },
+  "expenses": {
+    "heading": "PLAN EXPENSES",
+    "amountLabel": "AMOUNT",
+    "groups": [
+      {
+        "id": "administrative",
+        "lead": "Administrative Expenses:",
+        "description": "Plan-level costs for the services that keep the plan operating. These cover recordkeeping and daily account valuation, the participant website and call center, statement production and delivery, annual compliance testing, Form 5500 preparation, and trustee and custodial services for plan assets. [PLAN SPONSOR] pays [PORTION] of these costs directly; the remainder is allocated among participant accounts [PRO RATA BY BALANCE].",
+        "items": [
+          {
+            "id": "fee:plan-administrative",
+            "name": "Plan Administrative Fee",
+            "description": "Recordkeeping, compliance testing, Form 5500, participant support",
+            "amount": {
+              "kind": "money",
+              "minor": -1450,
+              "src": "-$14.50"
+            }
+          },
+          {
+            "id": "fee:investment-maintenance",
+            "name": "Investment Maintenance Fee",
+            "description": "Trustee and custodial services; maintenance of the plan's investment lineup",
+            "amount": {
+              "kind": "money",
+              "minor": -200,
+              "src": "-$2.00"
+            }
+          }
+        ],
+        "subtotal": {
+          "label": "Subtotal",
+          "amount": {
+            "kind": "money",
+            "minor": -1650,
+            "src": "-$16.50"
+          }
+        }
+      },
+      {
+        "id": "individual",
+        "lead": "Individual Expenses:",
+        "description": "Charges for services you elected or that apply only to your account. They are deducted directly from your account balance rather than shared across the plan.",
+        "items": [
+          {
+            "id": "fee:investment-advisory",
+            "name": "Investment Advisory Fee",
+            "description": "[ADVISOR NAME] managed account service: portfolio construction, ongoing rebalancing and advice. [0.35%] annually, billed quarterly",
+            "amount": {
+              "kind": "money",
+              "minor": -2059,
+              "src": "-$20.59"
+            }
+          },
+          {
+            "id": "fee:per-participant",
+            "name": "Per Participant Fee",
+            "description": "Flat quarterly charge for account-level recordkeeping and statement delivery",
+            "amount": {
+              "kind": "money",
+              "minor": -400,
+              "src": "-$4.00"
+            }
+          }
+        ],
+        "subtotal": {
+          "label": "Subtotal",
+          "amount": {
+            "kind": "money",
+            "minor": -2459,
+            "src": "-$24.59"
+          }
+        }
+      }
+    ],
+    "total": {
+      "label": "TOTAL EXPENSES PAID FROM YOUR ACCOUNT",
+      "amount": {
+        "kind": "money",
+        "minor": -4109,
+        "src": "-$41.09"
+      }
+    },
+    "footnote": "The amounts above are the dollar amounts actually deducted from your account during this statement period. They do not include investment-level expenses — each fund's operating expense ratio is taken out of the fund's return rather than charged to you separately, and is described in that fund's prospectus.",
+    "source": {
+      "page": 6,
+      "section": "Plan Expenses"
+    }
+  },
+  "contributionLimits": {
+    "heading": "CONTRIBUTION LIMIT MONITORING",
+    "gauges": [
+      {
+        "id": "elective",
+        "heading": "ELECTIVE DEFERRALS",
+        "ytd": {
+          "kind": "money",
+          "minor": 400000,
+          "src": "$4,000.00"
+        },
+        "ytdLabel": "Year-to-date deferrals",
+        "limit": {
+          "kind": "money",
+          "minor": 2450000,
+          "src": "$24,500.00"
+        },
+        "limitLabel": "Annual Limit",
+        "usedPct": 16,
+        "usedLabel": "16% of limit used",
+        "remaining": {
+          "kind": "money",
+          "minor": 2050000,
+          "src": "$20,500.00"
+        },
+        "remainingLabel": "remaining"
+      },
+      {
+        "id": "catch-up",
+        "heading": "CATCH-UP CONTRIBUTIONS",
+        "ytd": {
+          "kind": "money",
+          "minor": 208334,
+          "src": "$2,083.34"
+        },
+        "ytdLabel": "Year-to-date catch-up",
+        "limit": {
+          "kind": "money",
+          "minor": 1125000,
+          "src": "$11,250.00"
+        },
+        "limitLabel": "Catch-up limit, age 61",
+        "usedPct": 19,
+        "usedLabel": "19% of limit used",
+        "remaining": {
+          "kind": "money",
+          "minor": 916666,
+          "src": "$9,166.66"
+        },
+        "remainingLabel": "remaining"
+      }
+    ],
+    "note": "Elective deferrals are limited annually under IRC §402(g), combining pre-tax and Roth. The limit applies to you as an individual across all employers, not to this plan alone. The figures above include only deferrals recorded on this plan during the calendar year. If you deferred to another employer's plan this year, your remaining capacity is lower than shown. Your catch-up limit reflects the higher limit available for ages 60 through 63 under SECURE 2.0 §109. Catch-up contributions are made on a Roth basis where required for participants above the prior-year FICA wage threshold.",
+    "source": {
+      "page": 10,
+      "section": "Contribution Limit Monitoring"
+    }
+  },
+  "vesting": {
+    "heading": "VESTING SUMMARY",
+    "columns": {
+      "balance": "BALANCE ON 2/29/24",
+      "vestedPct": "VESTED %",
+      "vestedBalance": "VESTED BALANCE ON 2/29/24"
+    },
+    "rows": [
+      {
+        "id": "vesting:qualified-rollover",
+        "source": "Qualified Rollover",
+        "balance": {
+          "kind": "money",
+          "minor": 41789053,
+          "src": "$417,890.53"
+        },
+        "vestedPct": {
+          "kind": "pct",
+          "value": 100,
+          "src": "100%"
+        },
+        "vestedBalance": {
+          "kind": "money",
+          "minor": 41789053,
+          "src": "$417,890.53"
+        }
+      },
+      {
+        "id": "vesting:pre-tax-deferral",
+        "source": "Pre-Tax Deferral",
+        "balance": {
+          "kind": "money",
+          "minor": 0,
+          "src": "$0.00"
+        },
+        "vestedPct": {
+          "kind": "pct",
+          "value": 100,
+          "src": "100%"
+        },
+        "vestedBalance": {
+          "kind": "money",
+          "minor": 0,
+          "src": "$0.00"
+        }
+      },
+      {
+        "id": "vesting:xyz-safe-harbor-matching",
+        "source": "XYZ Safe Harbor Matching",
+        "balance": {
+          "kind": "money",
+          "minor": 0,
+          "src": "$0.00"
+        },
+        "vestedPct": {
+          "kind": "pct",
+          "value": 100,
+          "src": "100%"
+        },
+        "vestedBalance": {
+          "kind": "money",
+          "minor": 0,
+          "src": "$0.00"
+        }
+      }
+    ],
+    "total": {
+      "label": "TOTAL",
+      "balance": {
+        "kind": "money",
+        "minor": 41789053,
+        "src": "$417,890.53"
+      },
+      "vestedPct": {
+        "kind": "dash",
+        "src": "–"
+      },
+      "vestedBalance": {
+        "kind": "money",
+        "minor": 41789053,
+        "src": "$417,890.53"
+      }
+    },
+    "note": "Vesting is your ownership of employer contributions. Your own deferrals and rollovers are always 100% vested; employer sources vest on the schedule in your summary plan description.",
+    "source": {
+      "page": 10,
+      "section": "Vesting Summary"
+    }
+  },
+  "contributionActivity": {
+    "heading": "CONTRIBUTION ACTIVITY WITH VESTING SUMMARY BY SOURCE",
+    "columns": {
+      "thisPeriod": "THIS PERIOD",
+      "ytd": "YEAR-TO-DATE",
+      "balance": "BALANCE ON 2/29/24",
+      "vestedPct": "VESTED %",
+      "vestedBalance": "VESTED BALANCE ON 2/29/24"
+    },
+    "rows": [
+      {
+        "id": "contrib:qualified-rollover",
+        "source": "Qualified Rollover",
+        "thisPeriod": {
+          "kind": "money",
+          "minor": 0,
+          "src": "$0.00"
+        },
+        "ytd": {
+          "kind": "money",
+          "minor": 0,
+          "src": "$0.00"
+        },
+        "balance": {
+          "kind": "money",
+          "minor": 41789053,
+          "src": "$417,890.53"
+        },
+        "vestedPct": {
+          "kind": "pct",
+          "value": 100,
+          "src": "100%"
+        },
+        "vestedBalance": {
+          "kind": "money",
+          "minor": 41789053,
+          "src": "$417,890.53"
+        }
+      },
+      {
+        "id": "contrib:pre-tax-deferral",
+        "source": "Pre-Tax Deferral",
+        "thisPeriod": {
+          "kind": "money",
+          "minor": 0,
+          "src": "$0.00"
+        },
+        "ytd": {
+          "kind": "money",
+          "minor": 0,
+          "src": "$0.00"
+        },
+        "balance": {
+          "kind": "money",
+          "minor": 0,
+          "src": "$0.00"
+        },
+        "vestedPct": {
+          "kind": "pct",
+          "value": 100,
+          "src": "100%"
+        },
+        "vestedBalance": {
+          "kind": "money",
+          "minor": 0,
+          "src": "$0.00"
+        }
+      },
+      {
+        "id": "contrib:xyz-safe-harbor-matching",
+        "source": "XYZ Safe Harbor Matching",
+        "thisPeriod": {
+          "kind": "money",
+          "minor": 0,
+          "src": "$0.00"
+        },
+        "ytd": {
+          "kind": "money",
+          "minor": 0,
+          "src": "$0.00"
+        },
+        "balance": {
+          "kind": "money",
+          "minor": 0,
+          "src": "$0.00"
+        },
+        "vestedPct": {
+          "kind": "pct",
+          "value": 100,
+          "src": "100%"
+        },
+        "vestedBalance": {
+          "kind": "money",
+          "minor": 0,
+          "src": "$0.00"
+        }
+      }
+    ],
+    "total": {
+      "label": "TOTAL",
+      "thisPeriod": {
+        "kind": "dash",
+        "src": "–"
+      },
+      "ytd": {
+        "kind": "dash",
+        "src": "–"
+      },
+      "balance": {
+        "kind": "money",
+        "minor": 41789053,
+        "src": "$417,890.53"
+      },
+      "vestedPct": {
+        "kind": "dash",
+        "src": "–"
+      },
+      "vestedBalance": {
+        "kind": "money",
+        "minor": 41789053,
+        "src": "$417,890.53"
+      }
+    },
+    "source": {
+      "page": 11,
+      "section": "Contribution Activity with Vesting Summary by Source"
+    }
+  },
+  "designReference": {
+    "heading": "APPENDIX — DESIGN REFERENCE",
+    "intro": "Included to show design optionality. The three treatments below present the same contribution activity data at increasing levels of detail — choose one for production. This page is participant-only; it is not part of the plan sponsor assembly.",
+    "options": [
+      {
+        "id": 1,
+        "label": "OPTION 1",
+        "heading": "CONTRIBUTION ACTIVITY BY SOURCE",
+        "columns": [
+          "THIS PERIOD",
+          "YEAR-TO-DATE"
+        ],
+        "rows": [
+          {
+            "label": "Qualified Rollover",
+            "cells": [
+              {
+                "kind": "money",
+                "minor": 0,
+                "src": "$0.00"
+              },
+              {
+                "kind": "money",
+                "minor": 0,
+                "src": "$0.00"
+              }
+            ]
+          },
+          {
+            "label": "Pre-Tax Deferral",
+            "cells": [
+              {
+                "kind": "money",
+                "minor": 0,
+                "src": "$0.00"
+              },
+              {
+                "kind": "money",
+                "minor": 0,
+                "src": "$0.00"
+              }
+            ]
+          },
+          {
+            "label": "XYZ Safe Harbor Matching",
+            "cells": [
+              {
+                "kind": "money",
+                "minor": 0,
+                "src": "$0.00"
+              },
+              {
+                "kind": "money",
+                "minor": 0,
+                "src": "$0.00"
+              }
+            ]
+          }
+        ],
+        "total": {
+          "label": "TOTAL",
+          "cells": [
+            {
+              "kind": "money",
+              "minor": 0,
+              "src": "$0.00"
+            },
+            {
+              "kind": "money",
+              "minor": 0,
+              "src": "$0.00"
+            }
+          ]
+        }
+      },
+      {
+        "id": 2,
+        "label": "OPTION 2",
+        "heading": "CONTRIBUTION ACTIVITY WITH VESTING SUMMARY BY SOURCE",
+        "columns": [
+          "THIS PERIOD",
+          "YEAR-TO-DATE",
+          "CONTRIBUTIONS-TO-DATE"
+        ],
+        "rows": [
+          {
+            "label": "Qualified Rollover",
+            "cells": [
+              {
+                "kind": "money",
+                "minor": 0,
+                "src": "$0.00"
+              },
+              {
+                "kind": "money",
+                "minor": 0,
+                "src": "$0.00"
+              },
+              {
+                "kind": "money",
+                "minor": 41789053,
+                "src": "$417,890.53"
+              }
+            ]
+          },
+          {
+            "label": "Pre-Tax Deferral",
+            "cells": [
+              {
+                "kind": "money",
+                "minor": 0,
+                "src": "$0.00"
+              },
+              {
+                "kind": "money",
+                "minor": 0,
+                "src": "$0.00"
+              },
+              {
+                "kind": "money",
+                "minor": 0,
+                "src": "$0.00"
+              }
+            ]
+          },
+          {
+            "label": "XYZ Safe Harbor Matching",
+            "cells": [
+              {
+                "kind": "money",
+                "minor": 0,
+                "src": "$0.00"
+              },
+              {
+                "kind": "money",
+                "minor": 0,
+                "src": "$0.00"
+              },
+              {
+                "kind": "money",
+                "minor": 0,
+                "src": "$0.00"
+              }
+            ]
+          }
+        ],
+        "total": {
+          "label": "TOTAL",
+          "cells": [
+            {
+              "kind": "money",
+              "minor": 0,
+              "src": "$0.00"
+            },
+            {
+              "kind": "money",
+              "minor": 0,
+              "src": "$0.00"
+            },
+            {
+              "kind": "money",
+              "minor": 41789053,
+              "src": "$417,890.53"
+            }
+          ]
+        }
+      },
+      {
+        "id": 3,
+        "label": "OPTION 3",
+        "heading": "CONTRIBUTION ACTIVITY WITH VESTING SUMMARY BY SOURCE",
+        "columns": [
+          "THIS PERIOD",
+          "YEAR-TO-DATE",
+          "CONTRIBUTIONS-TO-DATE",
+          "VESTED %",
+          "VESTED BALANCE ON 2/29/24"
+        ],
+        "rows": [
+          {
+            "label": "Qualified Rollover",
+            "cells": [
+              {
+                "kind": "money",
+                "minor": 0,
+                "src": "$0.00"
+              },
+              {
+                "kind": "money",
+                "minor": 0,
+                "src": "$0.00"
+              },
+              {
+                "kind": "money",
+                "minor": 41789053,
+                "src": "$417,890.53"
+              },
+              {
+                "kind": "pct",
+                "value": 100,
+                "src": "100%"
+              },
+              {
+                "kind": "money",
+                "minor": 41789053,
+                "src": "$417,890.53"
+              }
+            ]
+          },
+          {
+            "label": "Pre-Tax Deferral",
+            "cells": [
+              {
+                "kind": "money",
+                "minor": 0,
+                "src": "$0.00"
+              },
+              {
+                "kind": "money",
+                "minor": 0,
+                "src": "$0.00"
+              },
+              {
+                "kind": "money",
+                "minor": 0,
+                "src": "$0.00"
+              },
+              {
+                "kind": "pct",
+                "value": 100,
+                "src": "100%"
+              },
+              {
+                "kind": "money",
+                "minor": 0,
+                "src": "$0.00"
+              }
+            ]
+          },
+          {
+            "label": "XYZ Safe Harbor Matching",
+            "cells": [
+              {
+                "kind": "money",
+                "minor": 0,
+                "src": "$0.00"
+              },
+              {
+                "kind": "money",
+                "minor": 0,
+                "src": "$0.00"
+              },
+              {
+                "kind": "money",
+                "minor": 0,
+                "src": "$0.00"
+              },
+              {
+                "kind": "pct",
+                "value": 100,
+                "src": "100%"
+              },
+              {
+                "kind": "money",
+                "minor": 0,
+                "src": "$0.00"
+              }
+            ]
+          },
+          {
+            "label": "Loans",
+            "cells": [
+              {
+                "kind": "blank",
+                "src": ""
+              },
+              {
+                "kind": "blank",
+                "src": ""
+              },
+              {
+                "kind": "blank",
+                "src": ""
+              },
+              {
+                "kind": "pct",
+                "value": 100,
+                "src": "100%"
+              },
+              {
+                "kind": "blank",
+                "src": ""
+              }
+            ]
+          }
+        ],
+        "total": {
+          "label": "TOTAL",
+          "cells": [
+            {
+              "kind": "money",
+              "minor": 0,
+              "src": "$0.00"
+            },
+            {
+              "kind": "money",
+              "minor": 0,
+              "src": "$0.00"
+            },
+            {
+              "kind": "money",
+              "minor": 41789053,
+              "src": "$417,890.53"
+            },
+            {
+              "kind": "dash",
+              "src": "–"
+            },
+            {
+              "kind": "money",
+              "minor": 41789053,
+              "src": "$417,890.53"
+            }
+          ]
+        }
+      }
+    ],
+    "selectedTreatment": "progressive-disclosure",
+    "source": {
+      "page": 13,
+      "section": "Appendix — Design Reference"
+    }
+  },
+  "investmentPerformance": {
+    "heading": "INVESTMENT PERFORMANCE SUMMARY",
+    "columns": {
+      "ticker": "TICKER",
+      "expenseRatio": "EXPENSE RATIO",
+      "ytd": "YTD",
+      "y1": "1 YR",
+      "y3": "3 YR",
+      "y5": "5 YR",
+      "y10": "10 YR",
+      "sinceInception": "SINCE INCEPTION",
+      "inceptionDate": "INCEPTION DATE",
+      "ending": "ENDING BALANCE"
+    },
+    "rows": [
+      {
+        "holdingId": "wacpx",
+        "category": "equity",
+        "ticker": "WACPX",
+        "expenseRatio": {
+          "kind": "pct",
+          "value": 0.45,
+          "src": "0.45%"
+        },
+        "ytd": {
+          "kind": "pct",
+          "value": 3.52,
+          "src": "3.52%"
+        },
+        "y1": {
+          "kind": "pct",
+          "value": -3.52,
+          "src": "-3.52%"
+        },
+        "y3": {
+          "kind": "pct",
+          "value": -5.5,
+          "src": "-5.50%"
+        },
+        "y5": {
+          "kind": "pct",
+          "value": 0.34,
+          "src": "0.34%"
+        },
+        "y10": {
+          "kind": "pct",
+          "value": 2.11,
+          "src": "2.11%"
+        },
+        "sinceInception": {
+          "kind": "pct",
+          "value": 4.86,
+          "src": "4.86%"
+        },
+        "inceptionDate": {
+          "kind": "date",
+          "iso": "1998-07-08",
+          "src": "7/8/1998"
+        },
+        "ending": {
+          "kind": "money",
+          "minor": 12273439,
+          "src": "$122,734.39"
+        }
+      },
+      {
+        "holdingId": "trpix",
+        "category": "fixed-income",
+        "ticker": "TRPIX",
+        "expenseRatio": {
+          "kind": "pct",
+          "value": 0.57,
+          "src": "0.57%"
+        },
+        "ytd": {
+          "kind": "pct",
+          "value": 8.04,
+          "src": "8.04%"
+        },
+        "y1": {
+          "kind": "pct",
+          "value": 7.15,
+          "src": "7.15%"
+        },
+        "y3": {
+          "kind": "pct",
+          "value": 14.81,
+          "src": "14.81%"
+        },
+        "y5": {
+          "kind": "pct",
+          "value": 9.43,
+          "src": "9.43%"
+        },
+        "y10": {
+          "kind": "pct",
+          "value": 9.93,
+          "src": "9.93%"
+        },
+        "sinceInception": {
+          "kind": "pct",
+          "value": 10.24,
+          "src": "10.24%"
+        },
+        "inceptionDate": {
+          "kind": "date",
+          "iso": "2015-08-28",
+          "src": "8/28/2015"
+        },
+        "ending": {
+          "kind": "money",
+          "minor": 9314778,
+          "src": "$93,147.78"
+        }
+      },
+      {
+        "holdingId": "tbcix",
+        "category": "fixed-income",
+        "ticker": "TBCIX",
+        "expenseRatio": {
+          "kind": "pct",
+          "value": 0.57,
+          "src": "0.57%"
+        },
+        "ytd": {
+          "kind": "pct",
+          "value": 39.48,
+          "src": "39.48%"
+        },
+        "y1": {
+          "kind": "pct",
+          "value": 15.89,
+          "src": "15.89%"
+        },
+        "y3": {
+          "kind": "pct",
+          "value": 4.43,
+          "src": "4.43%"
+        },
+        "y5": {
+          "kind": "pct",
+          "value": 9.67,
+          "src": "9.67%"
+        },
+        "y10": {
+          "kind": "pct",
+          "value": 13.67,
+          "src": "13.67%"
+        },
+        "sinceInception": {
+          "kind": "pct",
+          "value": 11.82,
+          "src": "11.82%"
+        },
+        "inceptionDate": {
+          "kind": "date",
+          "iso": "2015-08-28",
+          "src": "8/28/2015"
+        },
+        "ending": {
+          "kind": "money",
+          "minor": 6122100,
+          "src": "$61,221.00"
+        }
+      },
+      {
+        "holdingId": "flpsx",
+        "category": "international-equity",
+        "ticker": "FLPSX",
+        "expenseRatio": {
+          "kind": "pct",
+          "value": 0.82,
+          "src": "0.82%"
+        },
+        "ytd": {
+          "kind": "pct",
+          "value": 8.05,
+          "src": "8.05%"
+        },
+        "y1": {
+          "kind": "pct",
+          "value": 10.78,
+          "src": "10.78%"
+        },
+        "y3": {
+          "kind": "pct",
+          "value": 15.68,
+          "src": "15.68%"
+        },
+        "y5": {
+          "kind": "pct",
+          "value": 8.76,
+          "src": "8.76%"
+        },
+        "y10": {
+          "kind": "pct",
+          "value": 9.24,
+          "src": "9.24%"
+        },
+        "sinceInception": {
+          "kind": "pct",
+          "value": 12.41,
+          "src": "12.41%"
+        },
+        "inceptionDate": {
+          "kind": "date",
+          "iso": "1989-12-27",
+          "src": "12/27/1989"
+        },
+        "ending": {
+          "kind": "money",
+          "minor": 4634408,
+          "src": "$46,344.08"
+        }
+      },
+      {
+        "holdingId": "otchx",
+        "category": "cash",
+        "ticker": "OTCHX",
+        "expenseRatio": {
+          "kind": "pct",
+          "value": 1.03,
+          "src": "1.03%"
+        },
+        "ytd": {
+          "kind": "pct",
+          "value": 14.71,
+          "src": "14.71%"
+        },
+        "y1": {
+          "kind": "pct",
+          "value": 6.11,
+          "src": "6.11%"
+        },
+        "y3": {
+          "kind": "pct",
+          "value": 3.54,
+          "src": "3.54%"
+        },
+        "y5": {
+          "kind": "pct",
+          "value": 9.08,
+          "src": "9.08%"
+        },
+        "y10": {
+          "kind": "pct",
+          "value": 11.51,
+          "src": "11.51%"
+        },
+        "sinceInception": {
+          "kind": "pct",
+          "value": 9.36,
+          "src": "9.36%"
+        },
+        "inceptionDate": {
+          "kind": "date",
+          "iso": "2005-04-01",
+          "src": "4/1/2005"
+        },
+        "ending": {
+          "kind": "money",
+          "minor": 2549131,
+          "src": "$25,491.31"
+        }
+      },
+      {
+        "holdingId": "espnx",
+        "category": "real-estate",
+        "ticker": "ESPNX",
+        "expenseRatio": {
+          "kind": "pct",
+          "value": 0.93,
+          "src": "0.93%"
+        },
+        "ytd": {
+          "kind": "pct",
+          "value": 13.41,
+          "src": "13.41%"
+        },
+        "y1": {
+          "kind": "pct",
+          "value": 8.22,
+          "src": "8.22%"
+        },
+        "y3": {
+          "kind": "pct",
+          "value": 16.87,
+          "src": "16.87%"
+        },
+        "y5": {
+          "kind": "pct",
+          "value": 5.97,
+          "src": "5.97%"
+        },
+        "y10": {
+          "kind": "pct",
+          "value": 9.23,
+          "src": "9.23%"
+        },
+        "sinceInception": {
+          "kind": "pct",
+          "value": 8.74,
+          "src": "8.74%"
+        },
+        "inceptionDate": {
+          "kind": "date",
+          "iso": "2008-03-31",
+          "src": "3/31/2008"
+        },
+        "ending": {
+          "kind": "money",
+          "minor": 2344367,
+          "src": "$23,443.67"
+        }
+      },
+      {
+        "holdingId": "jattx",
+        "category": "real-estate",
+        "ticker": "JATTX",
+        "expenseRatio": {
+          "kind": "pct",
+          "value": 0.91,
+          "src": "0.91%"
+        },
+        "ytd": {
+          "kind": "pct",
+          "value": 13.11,
+          "src": "13.11%"
+        },
+        "y1": {
+          "kind": "pct",
+          "value": 5.81,
+          "src": "5.81%"
+        },
+        "y3": {
+          "kind": "pct",
+          "value": 6.54,
+          "src": "6.54%"
+        },
+        "y5": {
+          "kind": "pct",
+          "value": 5.12,
+          "src": "5.12%"
+        },
+        "y10": {
+          "kind": "pct",
+          "value": 9.89,
+          "src": "9.89%"
+        },
+        "sinceInception": {
+          "kind": "pct",
+          "value": 10.02,
+          "src": "10.02%"
+        },
+        "inceptionDate": {
+          "kind": "date",
+          "iso": "2005-02-25",
+          "src": "2/25/2005"
+        },
+        "ending": {
+          "kind": "money",
+          "minor": 2285861,
+          "src": "$22,858.61"
+        }
+      },
+      {
+        "holdingId": "dfstx",
+        "category": "real-estate",
+        "ticker": "DFSTX",
+        "expenseRatio": {
+          "kind": "pct",
+          "value": 0.27,
+          "src": "0.27%"
+        },
+        "ytd": {
+          "kind": "pct",
+          "value": 12.93,
+          "src": "12.93%"
+        },
+        "y1": {
+          "kind": "pct",
+          "value": 9.32,
+          "src": "9.32%"
+        },
+        "y3": {
+          "kind": "pct",
+          "value": 17.87,
+          "src": "17.87%"
+        },
+        "y5": {
+          "kind": "pct",
+          "value": 6.86,
+          "src": "6.86%"
+        },
+        "y10": {
+          "kind": "pct",
+          "value": 8.97,
+          "src": "8.97%"
+        },
+        "sinceInception": {
+          "kind": "pct",
+          "value": 10.63,
+          "src": "10.63%"
+        },
+        "inceptionDate": {
+          "kind": "date",
+          "iso": "1992-03-19",
+          "src": "3/19/1992"
+        },
+        "ending": {
+          "kind": "money",
+          "minor": 2264969,
+          "src": "$22,649.69"
+        }
+      }
+    ],
+    "note": "Returns are net of fund operating expenses and are annualized for periods over one year. Past performance does not guarantee future results.",
+    "source": {
+      "page": 11,
+      "section": "Investment Performance Summary"
+    }
+  },
+  "distributionsEligibleForRepayment": {
+    "heading": "DISTRIBUTIONS ELIGIBLE FOR REPAYMENT",
+    "columns": {
+      "type": "DISTRIBUTION TYPE",
+      "date": "DISTRIBUTION DATE",
+      "amount": "AMOUNT DISTRIBUTED",
+      "repaid": "REPAID TO DATE",
+      "eligible": "ELIGIBLE FOR REPAYMENT",
+      "deadline": "REPAYMENT DEADLINE"
+    },
+    "rows": [
+      {
+        "id": "repay:eped",
+        "type": "Emergency personal expense distribution",
+        "abbr": "EPED",
+        "date": {
+          "kind": "date",
+          "iso": "2023-04-30",
+          "src": "04/30/2023"
+        },
+        "amount": {
+          "kind": "money",
+          "minor": 100000,
+          "src": "$1,000.00"
+        },
+        "repaid": {
+          "kind": "money",
+          "minor": 0,
+          "src": "$0.00"
+        },
+        "eligible": {
+          "kind": "money",
+          "minor": 100000,
+          "src": "$1,000.00"
+        },
+        "deadline": {
+          "kind": "date",
+          "iso": "2026-04-30",
+          "src": "04/30/2026"
+        },
+        "deadlineNote": "61 days remaining"
+      },
+      {
+        "id": "repay:qbad",
+        "type": "Qualified birth or adoption distribution",
+        "abbr": "QBAD",
+        "date": {
+          "kind": "date",
+          "iso": "2024-08-14",
+          "src": "08/14/2024"
+        },
+        "amount": {
+          "kind": "money",
+          "minor": 500000,
+          "src": "$5,000.00"
+        },
+        "repaid": {
+          "kind": "money",
+          "minor": 150000,
+          "src": "$1,500.00"
+        },
+        "eligible": {
+          "kind": "money",
+          "minor": 350000,
+          "src": "$3,500.00"
+        },
+        "deadline": {
+          "kind": "date",
+          "iso": "2027-12-31",
+          "src": "12/31/2027"
+        }
+      },
+      {
+        "id": "repay:qdrd",
+        "type": "Qualified disaster recovery distribution",
+        "date": {
+          "kind": "date",
+          "iso": "2025-10-07",
+          "src": "10/07/2025"
+        },
+        "amount": {
+          "kind": "money",
+          "minor": 1200000,
+          "src": "$12,000.00"
+        },
+        "repaid": {
+          "kind": "money",
+          "minor": 400000,
+          "src": "$4,000.00"
+        },
+        "eligible": {
+          "kind": "money",
+          "minor": 800000,
+          "src": "$8,000.00"
+        },
+        "deadline": {
+          "kind": "date",
+          "iso": "2028-10-07",
+          "src": "10/07/2028"
+        }
+      }
+    ],
+    "total": {
+      "label": "TOTAL",
+      "date": {
+        "kind": "dash",
+        "src": "–"
+      },
+      "amount": {
+        "kind": "money",
+        "minor": 1800000,
+        "src": "$18,000.00"
+      },
+      "repaid": {
+        "kind": "money",
+        "minor": 550000,
+        "src": "$5,500.00"
+      },
+      "eligible": {
+        "kind": "money",
+        "minor": 1250000,
+        "src": "$12,500.00"
+      },
+      "deadline": {
+        "kind": "dash",
+        "src": "–"
+      }
+    },
+    "note": "You may repay these distributions to the plan, in whole or in part, at any time before the deadline shown. A repayment is treated as a rollover and is not taxed.",
+    "source": {
+      "page": 12,
+      "section": "Distributions Eligible for Repayment"
+    }
+  },
+  "rothRecapture": {
+    "heading": "AMOUNTS SUBJECT TO ROTH RECAPTURE TAX",
+    "columns": {
+      "rolloverDate": "ROLLOVER DATE",
+      "converted": "AMOUNT CONVERTED",
+      "periodEnds": "FIVE-YEAR PERIOD ENDS",
+      "distributed": "DISTRIBUTED THIS PERIOD",
+      "subjectToTax": "SUBJECT TO RECAPTURE TAX",
+      "remaining": "REMAINING IN WINDOW"
+    },
+    "rows": [
+      {
+        "id": "roth:2022-04-18",
+        "rolloverDate": {
+          "kind": "date",
+          "iso": "2022-04-18",
+          "src": "04/18/2022"
+        },
+        "converted": {
+          "kind": "money",
+          "minor": 850000,
+          "src": "$8,500.00"
+        },
+        "periodEnds": {
+          "kind": "date",
+          "iso": "2026-12-31",
+          "src": "12/31/2026"
+        },
+        "distributed": {
+          "kind": "money",
+          "minor": 250000,
+          "src": "$2,500.00"
+        },
+        "subjectToTax": {
+          "kind": "money",
+          "minor": 250000,
+          "src": "$2,500.00"
+        },
+        "remaining": {
+          "kind": "money",
+          "minor": 600000,
+          "src": "$6,000.00"
+        }
+      },
+      {
+        "id": "roth:2023-05-12",
+        "rolloverDate": {
+          "kind": "date",
+          "iso": "2023-05-12",
+          "src": "05/12/2023"
+        },
+        "converted": {
+          "kind": "money",
+          "minor": 1436000,
+          "src": "$14,360.00"
+        },
+        "periodEnds": {
+          "kind": "date",
+          "iso": "2027-12-31",
+          "src": "12/31/2027"
+        },
+        "distributed": {
+          "kind": "money",
+          "minor": 0,
+          "src": "$0.00"
+        },
+        "subjectToTax": {
+          "kind": "money",
+          "minor": 0,
+          "src": "$0.00"
+        },
+        "remaining": {
+          "kind": "money",
+          "minor": 1436000,
+          "src": "$14,360.00"
+        }
+      }
+    ],
+    "total": {
+      "label": "TOTAL",
+      "converted": {
+        "kind": "money",
+        "minor": 2286000,
+        "src": "$22,860.00"
+      },
+      "periodEnds": {
+        "kind": "dash",
+        "src": "–"
+      },
+      "distributed": {
+        "kind": "money",
+        "minor": 250000,
+        "src": "$2,500.00"
+      },
+      "subjectToTax": {
+        "kind": "money",
+        "minor": 250000,
+        "src": "$2,500.00"
+      },
+      "remaining": {
+        "kind": "money",
+        "minor": 2036000,
+        "src": "$20,360.00"
+      }
+    },
+    "note": "Amounts moved into your Roth account through an in-plan Roth rollover are subject to a five-taxable-year holding period. A distribution of those amounts before the period ends may be subject to an additional 10% tax. The five-taxable-year period begins on January 1 of the year in which the in-plan Roth rollover was made. Exceptions to the additional tax may apply. Consult your tax advisor.",
+    "source": {
+      "page": 12,
+      "section": "Amounts Subject to Roth Recapture Tax"
+    }
+  },
+  "profile": {
+    "heading": "PROFILE INFORMATION",
+    "fields": [
+      {
+        "id": "email",
+        "label": "Email Address:",
+        "value": "alexis.smith@yahoo.com",
+        "sensitive": true
+      },
+      {
+        "id": "hire-date",
+        "label": "Date of Hire:",
+        "value": "05/18/2012"
+      },
+      {
+        "id": "entry-date",
+        "label": "Plan Entry Date:",
+        "value": "09/01/2012"
+      },
+      {
+        "id": "dob",
+        "label": "Date of Birth:",
+        "value": "11/21/1983",
+        "sensitive": true
+      },
+      {
+        "id": "employee-number",
+        "label": "Employee Number:",
+        "value": "123456789",
+        "sensitive": true
+      },
+      {
+        "id": "division",
+        "label": "Division/Location:",
+        "value": "Marketing/Boston"
+      },
+      {
+        "id": "deferral",
+        "label": "Current Deferral Percentage:",
+        "value": "Pre-Tax: 0% / Roth: N/A / After-Tax: N/A"
+      },
+      {
+        "id": "auto-rebalance",
+        "label": "Auto Rebalance Option:",
+        "value": "Off"
+      },
+      {
+        "id": "primary-beneficiary",
+        "label": "Primary Beneficiary",
+        "value": "Jonathan C Smith"
+      }
+    ],
+    "deferral": {
+      "label": "Current Deferral Percentage:",
+      "srcValue": "Pre-Tax: 0% / Roth: N/A / After-Tax: N/A",
+      "preTax": "0%",
+      "roth": "N/A",
+      "afterTax": "N/A"
+    },
+    "source": {
+      "page": 12,
+      "section": "Profile Information"
+    }
+  },
+  "investmentDirectionRules": {
+    "heading": "YOUR RIGHT TO DIRECT INVESTMENTS",
+    "intro": "You may direct how your account is invested among the investment alternatives offered under the plan, and you may change that direction for both your existing balance and your future contributions. Instructions may be given through the participant website or by calling customer service on any day the New York Stock Exchange is open. Instructions received before [4:00 P.M. ET] are processed using that day's closing price; instructions received later are processed on the next business day.",
+    "limitationsIntro": "The following plan-level limitations apply to that right:",
+    "rules": [
+      {
+        "id": "right",
+        "title": "Your right, instruction channels & timing",
+        "blocks": [
+          {
+            "text": "You may direct how your account is invested among the investment alternatives offered under the plan, and you may change that direction for both your existing balance and your future contributions."
+          },
+          {
+            "text": "Instructions may be given through the participant website or by calling customer service on any day the New York Stock Exchange is open."
+          },
+          {
+            "text": "Instructions received before [4:00 P.M. ET] are processed using that day's closing price; instructions received later are processed on the next business day."
+          }
+        ]
+      },
+      {
+        "id": "frequent-trading",
+        "title": "Frequent trading",
+        "blocks": [
+          {
+            "lead": "Frequent trading.",
+            "text": "To protect other participants from the cost of short-term trading, [A ROUND TRIP INTO AND OUT OF THE SAME INVESTMENT WITHIN 30 DAYS] will block new purchases in that investment for [60 DAYS]. Individual funds may also impose their own trading restrictions and redemption fees, which are described in each fund's prospectus and applied in addition to the plan's rule."
+          }
+        ]
+      },
+      {
+        "id": "minimums",
+        "title": "Minimums and increments",
+        "blocks": [
+          {
+            "lead": "Minimums and increments.",
+            "text": "Investment elections and exchanges must be made in whole percentages totaling 100%, and are subject to a minimum of [$0 / 1%] per investment."
+          }
+        ]
+      },
+      {
+        "id": "restricted",
+        "title": "Amounts you may not direct",
+        "blocks": [
+          {
+            "lead": "Amounts you may not direct.",
+            "text": "[LIST ANY RESTRICTED SOURCES — for example, employer contributions held in the plan's default investment until vested, amounts pledged as collateral for an outstanding loan, or balances subject to a qualified domestic relations order.] If none apply to your plan, this line reads \"None.\""
+          }
+        ]
+      },
+      {
+        "id": "employer-securities",
+        "title": "Employer securities",
+        "blocks": [
+          {
+            "lead": "Employer securities.",
+            "text": "[IF THE PLAN HOLDS EMPLOYER STOCK, describe any limits on buying, selling, or diversifying it, including any required holding period, trading window, or insider-trading blackout that applies to you.] If the plan holds no employer securities, this line reads \"Not applicable.\""
+          }
+        ]
+      },
+      {
+        "id": "blackout",
+        "title": "Blackout periods",
+        "blocks": [
+          {
+            "lead": "Blackout periods.",
+            "text": "Your ability to direct investments, request a loan, or take a distribution may be suspended temporarily during a blackout period, such as a change of recordkeeper or a change to the plan's investment lineup. You will receive written notice at least 30 days before any blackout period begins."
+          }
+        ]
+      },
+      {
+        "id": "qdia",
+        "title": "If you give no instructions (QDIA)",
+        "blocks": [
+          {
+            "lead": "If you give no instructions.",
+            "text": "Contributions for which we have no investment direction on file are invested in the plan's qualified default investment alternative, [QDIA NAME]. You may move those amounts to any other investment alternative under the plan at any time, subject to the limitations above, and no transfer fee or restriction applies during your first [90] days in the default investment."
+          }
+        ]
+      },
+      {
+        "id": "erisa-404c",
+        "title": "ERISA section 404(c)",
+        "blocks": [
+          {
+            "text": "The plan intends to comply with ERISA section 404(c). To the extent it does, plan fiduciaries may be relieved of liability for losses that result from your own investment instructions. Contact your plan administrator or see your summary plan description for the full terms of these limitations."
+          }
+        ]
+      }
+    ],
+    "footer": "The plan intends to comply with ERISA section 404(c). To the extent it does, plan fiduciaries may be relieved of liability for losses that result from your own investment instructions. Contact your plan administrator or see your summary plan description for the full terms of these limitations.",
+    "source": {
+      "page": 7,
+      "section": "Your Right to Direct Investments"
+    }
+  },
+  "disclosures": {
+    "heading": "IMPORTANT NOTICES AND DISCLOSURES",
+    "items": [
+      {
+        "id": "diversification",
+        "title": "Diversification",
+        "summary": "Why a well-balanced, diversified portfolio matters — including the 20% single company or industry guideline.",
+        "text": "To help achieve long-term retirement security, you should give careful consideration to the benefits of a well-balanced and diversified portfolio. Spreading your assets among different types of investments can help you achieve a favorable rate of return, while minimizing your overall risk of losing money. This is because market or other economic conditions that cause one category of assets, or one particular security, to perform very well often cause another asset category, or another particular security, to perform poorly. If you invest more than 20% of your retirement savings in any one company or industry, your savings may not be properly diversified. Although diversification is not a guarantee against loss, it is an effective strategy to help you manage investment risk.",
+        "paragraphs": [
+          "To help achieve long-term retirement security, you should give careful consideration to the benefits of a well-balanced and diversified portfolio.",
+          "Spreading your assets among different types of investments can help you achieve a favorable rate of return, while minimizing your overall risk of losing money. This is because market or other economic conditions that cause one category of assets, or one particular security, to perform very well often cause another asset category, or another particular security, to perform poorly. If you invest more than 20% of your retirement savings in any one company or industry, your savings may not be properly diversified. Although diversification is not a guarantee against loss, it is an effective strategy to help you manage investment risk."
+        ]
+      },
+      {
+        "id": "all-assets",
+        "title": "Consider all of your assets",
+        "summary": "Take assets outside the Plan into account and review your portfolio, objectives, and options periodically.",
+        "text": "In deciding how to invest your retirement savings, you should take into account all of your assets, including any retirement savings outside of the Plan. No single approach is right for everyone because, among other factors, individuals have different financial goals, and different tolerances for risk. It is also important to periodically review your investment portfolio, your investment objectives and the investment options under the Plan to help ensure that your retirement savings will meet your retirement goals.",
+        "paragraphs": [
+          "In deciding how to invest your retirement savings, you should take into account all of your assets, including any retirement savings outside of the Plan. No single approach is right for everyone because, among other factors, individuals have different financial goals, and different tolerances for risk. It is also important to periodically review your investment portfolio, your investment objectives and the investment options under the Plan to help ensure that your retirement savings will meet your retirement goals."
+        ]
+      },
+      {
+        "id": "ppa-2006",
+        "title": "Pension Protection Act of 2006 & your plan summary",
+        "summary": "Additional required communications, and where to find plan specifics such as vesting and permitted disparity.",
+        "text": "You may receive additional information throughout the year to communicate requirements of the Pension Protection Act of 2006. To the extent possible, all required information will be mailed with or incorporated into your quarterly statement. Please refer to the summary of your plan for specifics with regard to your plan, such as additional vesting or contribution allocation information, such as integration with the taxable wage base. If your plan allocates certain contributions using an offset based on the Social Security taxable wage base (permitted disparity), please see your SPD for a more detailed explanation.",
+        "paragraphs": [
+          "You may receive additional information throughout the year to communicate requirements of the Pension Protection Act of 2006. To the extent possible, all required information will be mailed with or incorporated into your quarterly statement. Please refer to the summary of your plan for specifics with regard to your plan, such as additional vesting or contribution allocation information, such as integration with the taxable wage base. If your plan allocates certain contributions using an offset based on the Social Security taxable wage base (permitted disparity), please see your SPD for a more detailed explanation."
+        ]
+      },
+      {
+        "id": "dol",
+        "title": "Department of Labor resources",
+        "summary": "Where to learn more about individual investing and diversification.",
+        "text": "For more information on individual investing and diversification, you may visit the Department of Labor's website at: https://www.dol.gov/agencies/ebsa/laws-andregulations/laws/pension-protection-act/investing-and-diversification",
+        "paragraphs": [
+          "For more information on individual investing and diversification, you may visit the Department of Labor's website at: https://www.dol.gov/agencies/ebsa/laws-andregulations/laws/pension-protection-act/investing-and-diversification"
+        ],
+        "link": {
+          "display": "https://www.dol.gov/agencies/ebsa/laws-andregulations/laws/pension-protection-act/investing-and-diversification",
+          "href": "https://www.dol.gov/agencies/ebsa/laws-andregulations/laws/pension-protection-act/investing-and-diversification"
+        }
+      },
+      {
+        "id": "data-not-available",
+        "title": "\"Data not Available\" — personal rate of return",
+        "summary": "How the personal rate of return is calculated and why it may be unavailable.",
+        "text": "Data not Available. The Personal Rate of Return is calculated on a time-weighted cash flow basis. A full period of financial history is required to calculate this Rate of Return. For accounts with a zero balance at either the beginning or end of the time period shown, your Rate of Return will be calculated once full financial history is available.",
+        "paragraphs": [
+          "Data not Available. The Personal Rate of Return is calculated on a time-weighted cash flow basis. A full period of financial history is required to calculate this Rate of Return. For accounts with a zero balance at either the beginning or end of the time period shown, your Rate of Return will be calculated once full financial history is available."
+        ]
+      },
+      {
+        "id": "morningstar",
+        "title": "Morningstar data & past performance",
+        "summary": "Use restrictions on Morningstar content and the past-performance disclaimer.",
+        "text": "© 2015 Morningstar, Inc. All Rights Reserved. The information contained herein: (1) is proprietary to Morningstar and/or its content providers; (2) may not be copied or distributed; and (3) is not warranted to be accurate, complete, or timely. Neither Morningstar nor its content providers are responsible for any damages or losses arising from any use of this information. Past performance is no guarantee of future results.",
+        "paragraphs": [
+          "© 2015 Morningstar, Inc. All Rights Reserved. The information contained herein: (1) is proprietary to Morningstar and/or its content providers; (2) may not be copied or distributed; and (3) is not warranted to be accurate, complete, or timely. Neither Morningstar nor its content providers are responsible for any damages or losses arising from any use of this information. Past performance is no guarantee of future results."
+        ]
+      }
+    ],
+    "source": {
+      "page": 8,
+      "section": "Important Notices and Disclosures"
+    }
+  },
+  "balanceHistory": {
+    "heading": "BALANCE HISTORY",
+    "axis": [
+      "$500,000",
+      "$375,000",
+      "$250,000",
+      "$125,000",
+      "$0"
+    ],
+    "bars": [
+      {
+        "year": "2019",
+        "value": null,
+        "visualFraction": 0.3163
+      },
+      {
+        "year": "2020",
+        "value": null,
+        "visualFraction": 0.4247
+      },
+      {
+        "year": "2021",
+        "value": null,
+        "visualFraction": 0.5332
+      },
+      {
+        "year": "2022",
+        "value": null,
+        "visualFraction": 0.503
+      },
+      {
+        "year": "2023",
+        "value": null,
+        "visualFraction": 0.7409
+      },
+      {
+        "year": "2024",
+        "value": null,
+        "visualFraction": 0.8644
+      }
+    ],
+    "source": {
+      "page": 9,
+      "section": "Balance History"
+    }
+  },
+  "appendix": {
+    "heading": "APPENDIX — OPTIONAL MODULES",
+    "subheading": "SECTIONS BEYOND THE CORE STATEMENT, SELECTED BY YOUR PLAN",
+    "intro": "The sections that follow are optional modules. They are not part of the core statement every plan receives; the combination shown here reflects what your plan selected.",
+    "continuedLabel": "APPENDIX — OPTIONAL MODULES, CONTINUED"
+  },
+  "qaIssues": [
+    {
+      "id": "qa-totals-p1-p2",
+      "origin": "prd",
+      "title": "Page 1 vs page 2 account totals",
+      "detail": "Page 1 shows an ending balance of $417,890.53 (beginning $410,763.67, earnings $7,167.95), while the page 2 activity tables total $26,188.59 beginning, ($26,188.49) earnings and $0.10 ending across the rows shown.",
+      "pages": [
+        1,
+        2
+      ],
+      "marker": "Totals differ from page 1"
+    },
+    {
+      "id": "qa-loan-total",
+      "origin": "prd",
+      "title": "Loan total row does not reconcile",
+      "detail": "Principal paid, interest paid and total paid each show $10,674.10 in the TOTAL row, but the two loan rows sum to $909.17, $201.73 and $1,110.90. The TOTAL beginning balance $24,328.78 does not equal the row sum ($25,328.78), and the TOTAL ending balance $24,419.61 cannot be reconciled from the TOTAL beginning balance less the TOTAL principal paid (the ending row balances themselves do sum to $24,419.61).",
+      "pages": [
+        6
+      ],
+      "marker": "Total row does not reconcile"
+    },
+    {
+      "id": "qa-placeholders",
+      "origin": "prd",
+      "title": "Unresolved template placeholders",
+      "detail": "Bracketed tokens such as [PLAN SPONSOR], [PORTION], [PRO RATA BY BALANCE], [ADVISOR NAME], [0.35%], [4:00 P.M. ET], trading-rule placeholders, [$0 / 1%], [LIST ANY RESTRICTED SOURCES…], [IF THE PLAN HOLDS EMPLOYER STOCK…], [QDIA NAME] and [90] are displayed exactly as supplied and highlighted as placeholders.",
+      "pages": [
+        6,
+        7
+      ],
+      "marker": "Template placeholder"
+    },
+    {
+      "id": "qa-template-page1",
+      "origin": "prd",
+      "title": "Template content on page 1",
+      "detail": "Page 1 includes \"YOUR LOGO\", \"CO-BRANDED\", \"FirstName LastName\", placeholder address text, \"Subtitle Goes Here\" and Lorem ipsum. These are classified as template/design placeholders and are not presented as participant content.",
+      "pages": [
+        1
+      ],
+      "marker": "Template-only content"
+    },
+    {
+      "id": "qa-identity",
+      "origin": "prd",
+      "title": "Participant-name ambiguity",
+      "detail": "Page 1 shows both \"Sidney Sample\" (1234 Sample Avenue, Testingham, IN 12345) and a \"FirstName LastName\" addressee block; the profile email on page 12 is alexis.smith@yahoo.com. The prototype greets the participant using the fixture field (Sidney) — production needs one authoritative identity.",
+      "pages": [
+        1,
+        12
+      ],
+      "marker": "Identity needs validation"
+    },
+    {
+      "id": "qa-appendix-dates",
+      "origin": "prd",
+      "title": "Appendix dates extend beyond the statement period",
+      "detail": "The statement period ends 02/29/2024, but the repayment module includes distributions dated 08/14/2024 and 10/07/2025 and a relative label \"61 days remaining\" (for a 04/30/2026 deadline). Values are preserved as supplied; the relative label is shown verbatim and never recomputed.",
+      "pages": [
+        12
+      ],
+      "marker": "Date after statement period"
+    },
+    {
+      "id": "qa-balance-history",
+      "origin": "prd",
+      "title": "Balance-history annual values not encoded",
+      "detail": "The 2019–2024 balance history chart shows bars and axis values but no numeric bar labels. Bars are drawn from the source chart geometry for visual fidelity; no numeric values are shown or implied. Production requires the underlying yearly values.",
+      "pages": [
+        9
+      ],
+      "marker": "No exact value in source"
+    },
+    {
+      "id": "qa-limits-date-age",
+      "origin": "prd",
+      "title": "Optional-module values need date/jurisdiction validation",
+      "detail": "Contribution limit ($24,500.00) and catch-up limit ($11,250.00, \"age 61\") are shown exactly as supplied. The owner should confirm they match the statement date (2024) and participant age — the profile date of birth (11/21/1983) implies age 40 at period end.",
+      "pages": [
+        10,
+        12
+      ],
+      "marker": "Validate limit year/age"
+    },
+    {
+      "id": "qa-allocation-categories",
+      "origin": "build",
+      "title": "Allocation summary (p1) does not match category grouping (p3/p11)",
+      "detail": "Page 1 shows Fixed Income 22.29%, International Equity 14.65%, Cash 11.09%, Real Estate 22.60%. Grouping the page 3 holdings by their printed categories gives Fixed Income 36.94%, International Equity 11.09%, Cash 6.10%, Real Estate 16.50%. Fund-to-category labels also look mismatched (e.g. a bond fund under EQUITY, a mid-cap growth fund under CASH, small-cap funds under REAL ESTATE). Both are shown exactly as printed.",
+      "pages": [
+        1,
+        3,
+        11
+      ],
+      "marker": "Category totals differ (p1 vs p3)"
+    },
+    {
+      "id": "qa-lineup-sources",
+      "origin": "build",
+      "title": "Fund line-up and source names differ between sections",
+      "detail": "Page 2 activity lists five Vanguard Admiral funds and sources \"Employee Salary Reduction / Employer Match / Employer Safe Harbor Match\"; pages 3 and 11 list a different eight-fund line-up, and pages 10–11 use sources \"Qualified Rollover / Pre-Tax Deferral / XYZ Safe Harbor Matching\".",
+      "pages": [
+        2,
+        3,
+        10,
+        11
+      ],
+      "marker": "Line-up differs between pages"
+    },
+    {
+      "id": "qa-blank-cells",
+      "origin": "build",
+      "title": "Blank cells in page 2 activity tables",
+      "detail": "The Contributions cell is blank (not $0) for Employer Safe Harbor Match, Vanguard Growth Index and Vanguard Small Cap Index. The prototype preserves the blanks rather than converting them to zero (the PRD transcription shows $0 for these cells).",
+      "pages": [
+        2
+      ],
+      "marker": "Blank in source"
+    },
+    {
+      "id": "qa-contingent-total",
+      "origin": "build",
+      "title": "Contingent beneficiary total is 50%",
+      "detail": "Contingent designations total 50% (one beneficiary at 50%). Shown as supplied; production should confirm whether a 100% total is required.",
+      "pages": [
+        6
+      ],
+      "marker": "Total is 50%"
+    },
+    {
+      "id": "qa-beneficiary-dob",
+      "origin": "build",
+      "title": "Beneficiary dates of birth look inconsistent",
+      "detail": "The contingent beneficiary (relationship: Child) has a date of birth of 03/21/1968 — earlier than both the spouse (01/24/1970) and the participant profile date of birth (11/21/1983).",
+      "pages": [
+        6,
+        12
+      ],
+      "marker": "Check date of birth"
+    },
+    {
+      "id": "qa-deferral",
+      "origin": "build",
+      "title": "Deferral percentage vs year-to-date deferrals",
+      "detail": "Profile shows Current Deferral Percentage Pre-Tax: 0% / Roth: N/A / After-Tax: N/A, while contribution limit monitoring shows $4,000.00 year-to-date deferrals and $2,083.34 catch-up, and contribution activity shows $0.00 this period and year-to-date.",
+      "pages": [
+        10,
+        11,
+        12
+      ],
+      "marker": "Conflicts with deferral data"
+    },
+    {
+      "id": "qa-roth-distribution",
+      "origin": "build",
+      "title": "Roth distribution this period vs $0.00 withdrawals",
+      "detail": "Page 12 reports $2,500.00 of in-plan Roth rollover amounts distributed this period ($2,500.00 subject to recapture tax, $20,360.00 remaining in window), while pages 1–2 show $0.00 withdrawals for the same period and pages 10, 11 and 13 list no Roth source (Profile: Roth N/A). Shown exactly as supplied.",
+      "pages": [
+        1,
+        2,
+        10,
+        11,
+        12
+      ],
+      "marker": "Conflicts with $0.00 withdrawals"
+    },
+    {
+      "id": "qa-election-sum",
+      "origin": "build",
+      "title": "Investment elections sum to 99.99%",
+      "detail": "Elections 30% + 22% + 15% + 11% + 6% + 3 × 5.33% = 99.99%, while the TOTAL row shows 100%.",
+      "pages": [
+        3
+      ],
+      "marker": "Elections sum to 99.99%"
+    },
+    {
+      "id": "qa-dol-url",
+      "origin": "build",
+      "title": "Department of Labor URL as printed",
+      "detail": "The printed URL reads \".../laws-andregulations/...\" (no hyphen between \"and\" and \"regulations\"). It is shown exactly as printed; the owner should validate the link target.",
+      "pages": [
+        8
+      ],
+      "marker": "Validate URL"
+    },
+    {
+      "id": "qa-advisory-fee",
+      "origin": "build",
+      "title": "Advisory fee amount vs placeholder rate",
+      "detail": "The Investment Advisory Fee is −$20.59 with a placeholder rate \"[0.35%] annually, billed quarterly\". The amount cannot be validated until the rate and fee basis are supplied.",
+      "pages": [
+        6
+      ],
+      "marker": "Rate is a placeholder"
+    }
+  ],
+  "placeholders": [
+    {
+      "token": "[PLAN SPONSOR]",
+      "location": "Plan expenses — administrative expenses",
+      "page": 6
+    },
+    {
+      "token": "[PORTION]",
+      "location": "Plan expenses — administrative expenses",
+      "page": 6
+    },
+    {
+      "token": "[PRO RATA BY BALANCE]",
+      "location": "Plan expenses — administrative expenses",
+      "page": 6
+    },
+    {
+      "token": "[ADVISOR NAME]",
+      "location": "Plan expenses — investment advisory fee",
+      "page": 6
+    },
+    {
+      "token": "[0.35%]",
+      "location": "Plan expenses — investment advisory fee",
+      "page": 6
+    },
+    {
+      "token": "[4:00 P.M. ET]",
+      "location": "Right to direct investments — timing",
+      "page": 7
+    },
+    {
+      "token": "[A ROUND TRIP INTO AND OUT OF THE SAME INVESTMENT WITHIN 30 DAYS]",
+      "location": "Right to direct investments — frequent trading",
+      "page": 7
+    },
+    {
+      "token": "[60 DAYS]",
+      "location": "Right to direct investments — frequent trading",
+      "page": 7
+    },
+    {
+      "token": "[$0 / 1%]",
+      "location": "Right to direct investments — minimums and increments",
+      "page": 7
+    },
+    {
+      "token": "[LIST ANY RESTRICTED SOURCES — …]",
+      "location": "Right to direct investments — amounts you may not direct",
+      "page": 7
+    },
+    {
+      "token": "[IF THE PLAN HOLDS EMPLOYER STOCK, …]",
+      "location": "Right to direct investments — employer securities",
+      "page": 7
+    },
+    {
+      "token": "[QDIA NAME]",
+      "location": "Right to direct investments — if you give no instructions",
+      "page": 7
+    },
+    {
+      "token": "[90]",
+      "location": "Right to direct investments — if you give no instructions",
+      "page": 7
+    }
+  ],
+  "traceability": [
+    {
+      "page": 1,
+      "section": "Addressing / co-branding",
+      "destination": "Header · Plan & Profile · Print",
+      "route": "#/plan-profile/contacts"
+    },
+    {
+      "page": 1,
+      "section": "Plan / contact info",
+      "destination": "Header · Plan & Profile · Help",
+      "route": "#/plan-profile/contacts"
+    },
+    {
+      "page": 1,
+      "section": "Account access + QR",
+      "destination": "Plan & Profile · Print",
+      "route": "#/plan-profile/contacts"
+    },
+    {
+      "page": 1,
+      "section": "User-defined CompliChain message",
+      "destination": "Overview · Plan & Profile",
+      "route": "#/plan-profile/message"
+    },
+    {
+      "page": 1,
+      "section": "Account at a glance",
+      "destination": "Overview",
+      "route": "#/overview"
+    },
+    {
+      "page": 1,
+      "section": "Rate of return",
+      "destination": "Overview",
+      "route": "#/overview"
+    },
+    {
+      "page": 1,
+      "section": "Investment allocation summary",
+      "destination": "Overview · Investments",
+      "route": "#/overview"
+    },
+    {
+      "page": 2,
+      "section": "Account summary by contribution source",
+      "destination": "Activity",
+      "route": "#/activity/sources"
+    },
+    {
+      "page": 2,
+      "section": "Account summary by investment",
+      "destination": "Activity",
+      "route": "#/activity/investments"
+    },
+    {
+      "page": 3,
+      "section": "Investment / share detail",
+      "destination": "Investments",
+      "route": "#/investments/holdings"
+    },
+    {
+      "page": 3,
+      "section": "Asset allocation / election / deviation",
+      "destination": "Investments",
+      "route": "#/investments/allocation"
+    },
+    {
+      "page": 4,
+      "section": "Lifetime income estimate",
+      "destination": "Retirement Income",
+      "route": "#/retirement-income/lifetime-estimate"
+    },
+    {
+      "page": 5,
+      "section": "Lifetime-income assumptions / limitations",
+      "destination": "Retirement Income",
+      "route": "#/retirement-income/assumptions"
+    },
+    {
+      "page": 6,
+      "section": "Loan summary",
+      "destination": "Loans & Beneficiaries",
+      "route": "#/loans-beneficiaries/loans"
+    },
+    {
+      "page": 6,
+      "section": "Beneficiaries",
+      "destination": "Loans & Beneficiaries · Profile",
+      "route": "#/loans-beneficiaries/beneficiaries"
+    },
+    {
+      "page": 6,
+      "section": "Plan expenses",
+      "destination": "Activity",
+      "route": "#/activity/fees"
+    },
+    {
+      "page": 7,
+      "section": "Right to direct investments",
+      "destination": "Investments",
+      "route": "#/investments/direction"
+    },
+    {
+      "page": 8,
+      "section": "Important notices / disclosures",
+      "destination": "Plan & Profile",
+      "route": "#/plan-profile/disclosures"
+    },
+    {
+      "page": 9,
+      "section": "Balance history",
+      "destination": "Overview",
+      "route": "#/overview"
+    },
+    {
+      "page": 9,
+      "section": "Projected retirement income",
+      "destination": "Retirement Income",
+      "route": "#/retirement-income/readiness"
+    },
+    {
+      "page": 10,
+      "section": "Contribution limit monitoring",
+      "destination": "Activity",
+      "route": "#/activity/limits"
+    },
+    {
+      "page": 10,
+      "section": "Vesting summary",
+      "destination": "Activity",
+      "route": "#/activity/vesting"
+    },
+    {
+      "page": 11,
+      "section": "Contribution activity with vesting",
+      "destination": "Activity",
+      "route": "#/activity/vesting"
+    },
+    {
+      "page": 11,
+      "section": "Investment performance",
+      "destination": "Investments",
+      "route": "#/investments/performance"
+    },
+    {
+      "page": 12,
+      "section": "Distributions eligible for repayment",
+      "destination": "Activity",
+      "route": "#/activity/repayments"
+    },
+    {
+      "page": 12,
+      "section": "Roth recapture tax",
+      "destination": "Activity",
+      "route": "#/activity/roth"
+    },
+    {
+      "page": 12,
+      "section": "Profile information",
+      "destination": "Plan & Profile",
+      "route": "#/plan-profile/profile"
+    },
+    {
+      "page": 13,
+      "section": "Design-reference contribution variants",
+      "destination": "One progressive-disclosure treatment (Activity › Vesting)",
+      "route": "#/activity/vesting"
+    }
+  ]
+}

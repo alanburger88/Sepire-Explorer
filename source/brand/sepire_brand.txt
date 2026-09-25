@@ -1,0 +1,17 @@
+Sepire Brand
+
+Sepire uses a warm, professional, and modern brand style focused on secure customer communications, accessibility, and compliance.
+
+The tone is friendly, reliable, and trustworthy, supported by clean layouts, strong whitespace, and visible compliance cues such as HITRUST, SOC2, and PCI.
+
+Core colors:
+Primary Orange: #E5833B
+Charcoal Gray: #333333
+White: #FFFFFF
+Peach/Sand Accent: #FDECE0
+
+Typography should use clean geometric sans-serif fonts such as Montserrat, Poppins, Inter, or Helvetica Neue.
+
+Design elements include pill-shaped orange CTA buttons, light halftone dot patterns, minimalist navigation, generous whitespace, and use of the Sepire “S” mark as an icon.
+
+For execution, use darker orange hover states, place dot patterns around edges or corners, and keep the main headline as the strongest visual element.

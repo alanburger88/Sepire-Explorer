@@ -1,0 +1,310 @@
+/* ---------- Shell ---------- */
+.app {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.topbar {
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  display: flex;
+  align-items: center;
+  gap: 28px;
+  height: var(--topbar-h);
+  padding: 0 28px;
+  background: color-mix(in srgb, var(--surface) 88%, transparent);
+  backdrop-filter: saturate(1.4) blur(14px);
+  border-bottom: 1px solid var(--line);
+}
+
+.topbar-brand {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  text-decoration: none;
+  flex: none;
+}
+
+.topbar-brand img {
+  height: 26px;
+  width: auto;
+}
+
+.topbar-product {
+  padding-left: 12px;
+  border-left: 1px solid var(--line-strong);
+  color: var(--ink-2);
+  font-size: 13.5px;
+  font-weight: 600;
+  letter-spacing: 0.01em;
+}
+
+.topbar-nav {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  flex: 1;
+}
+
+.topbar-link {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  height: 38px;
+  padding: 0 14px;
+  border-radius: var(--r-pill);
+  color: var(--ink-2);
+  font-size: 14px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: background-color var(--dur-1) var(--ease), color var(--dur-1) var(--ease);
+}
+
+.topbar-link:hover {
+  color: var(--ink);
+  background: var(--surface-3);
+}
+
+.topbar-link[aria-current='page'] {
+  color: var(--orange-ink);
+  background: var(--orange-wash);
+}
+
+.topbar-actions {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex: none;
+}
+
+.page {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  min-height: 0;
+}
+
+.page-fill {
+  height: calc(100vh - var(--topbar-h));
+  overflow: hidden;
+}
+
+/* ---------- Stage & device frames ---------- */
+.stage {
+  position: relative;
+  flex: 1;
+  min-height: 0;
+  display: grid;
+  place-items: center;
+  overflow: hidden;
+  background:
+    radial-gradient(circle at 1px 1px, var(--stage-grid) 1px, transparent 0) 0 0 / 18px 18px,
+    var(--stage);
+}
+
+.device {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  transition: width var(--dur-3) var(--ease), height var(--dur-3) var(--ease);
+}
+
+.device-desktop {
+  border-radius: 14px;
+  overflow: hidden;
+  background: var(--surface);
+  box-shadow: var(--shadow-3), 0 0 0 1px var(--line);
+}
+
+.device-chrome {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  height: 38px;
+  padding: 0 14px;
+  background: var(--surface-3);
+  border-bottom: 1px solid var(--line);
+}
+
+.device-dots {
+  display: flex;
+  gap: 7px;
+}
+
+.device-dots i {
+  width: 11px;
+  height: 11px;
+  border-radius: 50%;
+  background: var(--line-strong);
+}
+
+.device-url {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  height: 24px;
+  padding: 0 12px;
+  margin: 0 auto;
+  border-radius: var(--r-pill);
+  background: var(--surface);
+  color: var(--ink-3);
+  font-size: 12px;
+  font-weight: 500;
+  transform: translateX(-24px);
+}
+
+.device-mobile {
+  padding: 12px;
+  border-radius: 54px;
+  background: var(--device);
+  box-shadow: var(--shadow-3), inset 0 0 0 2px rgba(255, 255, 255, 0.08);
+}
+
+.device-mobile::before {
+  content: '';
+  position: absolute;
+  top: 22px;
+  left: 50%;
+  width: 104px;
+  height: 28px;
+  border-radius: 20px;
+  background: var(--device);
+  transform: translateX(-50%);
+  z-index: 3;
+  pointer-events: none;
+}
+
+.device-screen {
+  position: relative;
+  overflow: hidden;
+  background: #fff;
+}
+
+.device-mobile .device-screen {
+  border-radius: 42px;
+}
+
+.device-viewport {
+  position: relative;
+  overflow: hidden;
+}
+
+.device-screen iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  border: 0;
+  transform-origin: 0 0;
+  background: #fff;
+}
+
+.device-status {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 8%;
+  background: #fff;
+  color: #1d1a18;
+  font-weight: 650;
+  letter-spacing: 0.01em;
+}
+
+.device-status-icons {
+  display: flex;
+  align-items: center;
+  gap: 0.35em;
+}
+
+.device-status-icons i {
+  width: 1em;
+  height: 0.7em;
+  border-radius: 2px;
+  background: #1d1a18;
+  clip-path: polygon(0 100%, 100% 0, 100% 100%);
+}
+
+.device-status-icons b {
+  width: 1.6em;
+  height: 0.75em;
+  border-radius: 3px;
+  border: 1.5px solid #1d1a18;
+  background: linear-gradient(90deg, #1d1a18 70%, transparent 0);
+  background-clip: content-box;
+  padding: 1px;
+}
+
+.device-loading {
+  position: absolute;
+  inset: 0;
+  z-index: 4;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  background: color-mix(in srgb, var(--surface) 92%, transparent);
+  color: var(--ink-2);
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.spinner {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border: 2.5px solid var(--orange-soft);
+  border-top-color: var(--orange);
+  animation: spin 0.8s linear infinite;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* ---------- Desktop notice ---------- */
+.desktop-notice {
+  position: fixed;
+  inset: 0;
+  z-index: 200;
+  display: grid;
+  place-items: center;
+  padding: 16px;
+  background: color-mix(in srgb, var(--bg) 70%, transparent);
+  backdrop-filter: blur(8px);
+}
+
+.desktop-notice-card {
+  max-width: 440px;
+  padding: 28px;
+  border-radius: var(--r-lg);
+  background: var(--surface);
+  border: 1px solid var(--line);
+  box-shadow: var(--shadow-2);
+  display: grid;
+  gap: 12px;
+  color: var(--ink-2);
+}
+
+.desktop-notice-card svg {
+  color: var(--orange);
+}
+
+.desktop-notice-card h2 {
+  font-size: 22px;
+}
+
+.desktop-notice-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 6px;
+}
+
+@media (max-width: 1100px) {
+  body {
+    min-width: 0;
+  }
+}
