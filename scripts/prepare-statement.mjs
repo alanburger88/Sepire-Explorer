@@ -6,7 +6,7 @@
 //     → public/statement/assets/*    (logo, mark, sponsor logo, video poster)
 //   source/statement.json          → public/data/statement.json
 //   source/Sepire_Statement_v1.1.pdf → public/pdf/Sepire_Statement_v1.1.pdf
-//   GraphQL SDL, JSON Schema, OpenAPI and sample payload → public/data/ (scripts/gen-schemas.mjs)
+//   JSON Schema and sample payload → public/data/ (scripts/gen-schemas.mjs)
 //
 // Run automatically by `npm run dev` / `npm run build`.
 

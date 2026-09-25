@@ -11,6 +11,7 @@ import {
   Sparkles,
   Workflow,
 } from 'lucide-react';
+import { ComplianceBadges } from '../../components/ComplianceBadges';
 import { Halftone } from '../../components/Halftone';
 import { pdfPageUrl } from '../../lib/assets';
 import { STEPS } from '../tour/steps';
@@ -38,7 +39,7 @@ const SECTIONS = [
     icon: Braces,
     eyebrow: 'Data & integration',
     title: 'Send one payload, get a statement',
-    body: 'Explore the JSON that powers this statement, send it with REST or GraphQL, and edit the data to watch the statement re-render.',
+    body: 'Explore the JSON that powers this statement, see how it reaches Sepire, and edit the data to watch the statement re-render.',
     cta: 'Explore the data',
   },
 ];
@@ -47,12 +48,12 @@ const NUMBERS = [
   { value: '13 pages', label: 'become one interactive statement', note: 'Every section of the PDF, reorganized into seven focused tabs.' },
   { value: 'EN | ES', label: 'with one tap', note: 'Every screen, chart, answer and the print edition.' },
   { value: '~25%', label: 'of the PDF’s file size', note: 'Typical per statement, with no PDF to generate or store.' },
-  { value: '1 payload', label: 'per recipient', note: 'Sent by REST or GraphQL, then validated and rendered.' },
+  { value: '1 payload', label: 'per recipient', note: 'Sent in one API call, then validated and rendered.' },
 ];
 
 const FLOW = [
   { icon: Database, title: 'Your recordkeeping data', body: 'Balances, activity, holdings, loans and plan content for each recipient.' },
-  { icon: Workflow, title: 'Sepire API', body: 'One JSON payload per statement over REST or GraphQL, validated on arrival.' },
+  { icon: Workflow, title: 'Sepire API', body: 'One JSON payload per statement through a secure API, validated on arrival.' },
   { icon: MonitorSmartphone, title: 'Interactive statement', body: 'Personalized, bilingual and accessible on any device, with Sepi built in.' },
   { icon: Printer, title: 'Statement of record', body: 'Printable or saved as a PDF on demand; no PDF production run.' },
 ];
@@ -81,6 +82,7 @@ export function IntroPage() {
               Compare with the PDF
             </a>
           </div>
+          <ComplianceBadges className="intro-badges" />
           <p className="intro-meta">
             <Sparkles size={15} aria-hidden /> Live demo statement for “Sidney Sample”, TEST COMPANY 401(K) RETIREMENT
             PLAN.

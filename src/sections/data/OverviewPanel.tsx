@@ -1,5 +1,6 @@
 import { ArrowRight, Download, FileCheck2, KeyRound, Link2, MonitorSmartphone, Send, ServerCog, ShieldCheck, Database } from 'lucide-react';
 import { useEffect, useMemo, useState } from 'react';
+import { ComplianceBadges } from '../../components/ComplianceBadges';
 import { navigate } from '../../lib/router';
 import { API_BASE } from './config';
 import { AnatomyChart, type AnatomyRow } from './AnatomyChart';
@@ -9,8 +10,6 @@ import { byteSize, countCells, formatBytes, gzipSize, SECTION_INFO, sectionTitle
 const DOWNLOADS = [
   { href: 'data/sample-payload.json', file: 'sample-payload.json', label: 'Sample payload', note: 'One recipient, ready to send' },
   { href: 'data/statement.schema.json', file: 'statement.schema.json', label: 'JSON Schema', note: 'Validate before you send' },
-  { href: 'data/openapi.yaml', file: 'openapi.yaml', label: 'OpenAPI 3.1', note: 'Import into Postman or Swagger' },
-  { href: 'data/schema.graphql', file: 'schema.graphql', label: 'GraphQL schema', note: 'Types, mutations and docs' },
 ];
 
 export function OverviewPanel({ state }: { state: DataState }) {
@@ -54,7 +53,7 @@ export function OverviewPanel({ state }: { state: DataState }) {
             </span>
             <h3>Send it to Sepire</h3>
             <p>
-              <code>POST /v1/statements</code> or <code>mutation submitStatement</code>. Batches of up to 1,000.
+              One call per recipient to <code>POST /v1/statements</code>, or batches of up to 1,000.
             </p>
           </li>
           <li>
@@ -93,7 +92,7 @@ export function OverviewPanel({ state }: { state: DataState }) {
         <div className="card">
           <dt>API calls per recipient</dt>
           <dd className="dov-kpi">1</dd>
-          <dd>REST or GraphQL, same validation</dd>
+          <dd>Validated and published in one step</dd>
         </div>
       </dl>
 
@@ -117,7 +116,7 @@ export function OverviewPanel({ state }: { state: DataState }) {
                 <FileCheck2 size={18} aria-hidden />
                 <div>
                   <strong>Map your data</strong>
-                  <p>Use the JSON Schema or GraphQL schema below; the sample payload shows every field filled in.</p>
+                  <p>Use the JSON Schema below; the sample payload shows every field filled in.</p>
                 </div>
               </li>
               <li>
@@ -137,13 +136,9 @@ export function OverviewPanel({ state }: { state: DataState }) {
                 </div>
               </li>
             </ol>
-            <div className="dov-try">
-              <a className="btn btn-primary btn-sm" href="#/data/rest">
-                Try the REST API <ArrowRight size={15} aria-hidden />
-              </a>
-              <a className="btn btn-secondary btn-sm" href="#/data/graphql">
-                Try GraphQL
-              </a>
+            <div className="dov-trust">
+              <p>Statement data is protected by independently assessed security controls.</p>
+              <ComplianceBadges />
             </div>
           </section>
 

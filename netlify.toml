@@ -22,13 +22,3 @@
     X-Content-Type-Options = "nosniff"
     Referrer-Policy = "strict-origin-when-cross-origin"
     Permissions-Policy = "camera=(), microphone=(), geolocation=(), payment=()"
-
-[[headers]]
-  for = "/data/*.graphql"
-  [headers.values]
-    Content-Type = "text/plain; charset=utf-8"
-
-[[headers]]
-  for = "/data/*.yaml"
-  [headers.values]
-    Content-Type = "text/yaml; charset=utf-8"

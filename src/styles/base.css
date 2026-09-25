@@ -257,6 +257,55 @@ pre {
   color: var(--orange-ink);
 }
 
+/* Compliance badges (src/components/ComplianceBadges.tsx) */
+.badges {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 5px 16px 5px 5px;
+  border: 1px solid var(--line);
+  border-radius: var(--r-pill);
+  background: var(--surface);
+}
+
+.badge-seal {
+  display: grid;
+  place-items: center;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background: var(--orange-wash);
+  color: var(--orange-ink);
+}
+
+.badge-text {
+  display: grid;
+  line-height: 1.15;
+}
+
+.badge-text strong {
+  font-family: var(--font-display);
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  color: var(--ink);
+}
+
+.badge-text small {
+  font-size: 11.5px;
+  font-weight: 600;
+  color: var(--ink-3);
+}
+
 .card {
   position: relative;
   background: var(--surface);

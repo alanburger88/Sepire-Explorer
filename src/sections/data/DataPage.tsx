@@ -1,4 +1,4 @@
-import { Braces, FileJson2, Network, PenLine, RotateCcw, Waypoints } from 'lucide-react';
+import { FileJson2, PenLine, RotateCcw, Waypoints } from 'lucide-react';
 import { lazy, Suspense, useCallback, useEffect, useMemo, useState } from 'react';
 import { Halftone } from '../../components/Halftone';
 import { loadStatement, type JsonObject } from './payload';
@@ -6,17 +6,13 @@ import { OverviewPanel } from './OverviewPanel';
 import './data.css';
 
 const PayloadPanel = lazy(() => import('./PayloadPanel').then((m) => ({ default: m.PayloadPanel })));
-const RestPanel = lazy(() => import('./RestPanel').then((m) => ({ default: m.RestPanel })));
-const GraphqlPanel = lazy(() => import('./GraphqlPanel').then((m) => ({ default: m.GraphqlPanel })));
 const LivePanel = lazy(() => import('./LivePanel').then((m) => ({ default: m.LivePanel })));
 
-export type Tab = 'overview' | 'payload' | 'rest' | 'graphql' | 'live';
+export type Tab = 'overview' | 'payload' | 'live';
 
-const TABS: Array<{ id: Tab; label: string; icon: typeof Braces }> = [
+const TABS: Array<{ id: Tab; label: string; icon: typeof Waypoints }> = [
   { id: 'overview', label: 'How it works', icon: Waypoints },
   { id: 'payload', label: 'Explore the payload', icon: FileJson2 },
-  { id: 'rest', label: 'REST', icon: Network },
-  { id: 'graphql', label: 'GraphQL', icon: Braces },
   { id: 'live', label: 'Edit & re-render', icon: PenLine },
 ];
 
@@ -65,9 +61,9 @@ export function DataPage({ tabParam }: { tabParam?: string }) {
           <span className="eyebrow">Data & integration · client → Sepire</span>
           <h1>One payload in. A complete statement out.</h1>
           <p>
-            Your recordkeeping system sends each recipient’s statement to Sepire as one JSON payload, over REST or
-            GraphQL. Sepire validates it, publishes the interactive statement in English and Spanish, and serves the
-            print edition on demand.
+            Your recordkeeping system sends each recipient’s statement to Sepire as one JSON payload through a
+            secure API. Sepire validates it, publishes the interactive statement in English and Spanish, and serves
+            the print edition on demand.
           </p>
         </div>
         {changed && (
@@ -83,7 +79,7 @@ export function DataPage({ tabParam }: { tabParam?: string }) {
             <Icon size={16} aria-hidden /> {label}
           </a>
         ))}
-        <span className="data-tabs-note">Sandbox: requests are simulated in your browser. Endpoint names are illustrative.</span>
+        <span className="data-tabs-note">Demo data. Edits stay in your browser. Endpoint names are illustrative.</span>
       </nav>
 
       <div className="data-body">
@@ -103,8 +99,6 @@ export function DataPage({ tabParam }: { tabParam?: string }) {
           >
             {tab === 'overview' && <OverviewPanel state={state} />}
             {tab === 'payload' && <PayloadPanel state={state} />}
-            {tab === 'rest' && <RestPanel state={state} />}
-            {tab === 'graphql' && <GraphqlPanel state={state} />}
             {tab === 'live' && <LivePanel state={state} />}
           </Suspense>
         )}

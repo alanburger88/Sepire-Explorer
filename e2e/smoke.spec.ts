@@ -34,6 +34,14 @@ test.describe('Intro', () => {
     await expect(tab.getByText('Hi Sidney,')).toBeVisible();
   });
 
+  test('shows the compliance badges', async ({ page }) => {
+    await page.goto('./');
+    const badges = page.locator('.intro-hero .badge');
+    await expect(badges).toHaveCount(2);
+    await expect(badges.nth(0)).toContainText('HITRUST');
+    await expect(badges.nth(1)).toContainText('SOC 2');
+  });
+
   test('theme follows the OS, and the toggle persists', async ({ page }) => {
     await page.goto('./');
     const html = page.locator('html');
@@ -129,14 +137,27 @@ test.describe('PDF → Interactive', () => {
 });
 
 test.describe('Data & integration', () => {
-  test('contract downloads are published', async ({ page, request }) => {
+  test('overview: sample payload and JSON Schema only, with compliance badges', async ({ page, request }) => {
     await page.goto('#/data');
+    await expect(page.locator('.data-tab')).toHaveText(['How it works', 'Explore the payload', 'Edit & re-render']);
+    await expect(page.locator('.dov-trust .badge')).toHaveCount(2);
+    await expect(page.locator('main')).not.toContainText(/graphql|openapi/i, { useInnerText: true });
     const links = page.locator('.dov-downloads a');
-    await expect(links).toHaveCount(4);
+    await expect(links).toHaveCount(2);
     for (const href of await links.evaluateAll((as) => as.map((a) => a.getAttribute('href')!))) {
       const res = await request.get(href);
       expect(res.status(), href).toBe(200);
       expect((await res.body()).length, href).toBeGreaterThan(500);
+    }
+    for (const gone of ['data/schema.graphql', 'data/openapi.yaml']) {
+      expect(await (await request.get(gone)).text(), gone).not.toMatch(/submitStatement|openapi:/);
+    }
+  });
+
+  test('old REST and GraphQL links land on the overview', async ({ page }) => {
+    for (const tab of ['rest', 'graphql']) {
+      await page.goto(`#/data/${tab}`);
+      await expect(page.locator('.data-tab[aria-current="page"]')).toHaveText('How it works');
     }
   });
 
@@ -145,28 +166,6 @@ test.describe('Data & integration', () => {
     await expect(page.locator('.dpay-pointer code')).toHaveText('/holdings/rows/1');
     await expect(page.locator('.dpay-pdf')).toContainText('PDF page 3');
     await expect(ring(page, '.dpay-preview iframe')).toHaveClass(/sx-on/);
-  });
-
-  test('REST: a valid payload publishes, a bad one explains itself', async ({ page }) => {
-    await page.goto('#/data/rest');
-    const send = page.getByRole('button', { name: 'Send request' });
-    await send.click();
-    await expect(page.locator('.dapi-status')).toContainText('201');
-    await expect(page.locator('.dapi-banner.is-ok')).toContainText('Published');
-
-    await page.locator('.dapi-preset select').selectOption('dollars');
-    await send.click();
-    await expect(page.locator('.dapi-status')).toContainText('422');
-    const issue = page.locator('.dapi-issues li.is-error').first();
-    await expect(issue).toContainText('/balances/ending/minor');
-    await issue.getByRole('button').click();
-    await expect.poll(() => page.evaluate(() => window.getSelection()?.toString())).toBe('417890.53');
-  });
-
-  test('GraphQL: the mutation publishes', async ({ page }) => {
-    await page.goto('#/data/graphql');
-    await page.getByRole('button', { name: 'Run' }).click();
-    await expect(page.locator('.dapi-status')).toContainText('Published');
   });
 
   test('editing the data re-renders the statement', async ({ page }) => {

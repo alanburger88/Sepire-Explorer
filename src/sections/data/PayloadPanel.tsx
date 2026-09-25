@@ -1,31 +1,12 @@
 import { Check, Copy, FileText, MapPin, Search } from 'lucide-react';
-import { getNullableType, isInputObjectType, isListType, type GraphQLInputType, type GraphQLSchema } from 'graphql';
 import { useEffect, useMemo, useState } from 'react';
 import { pdfThumbUrl } from '../../lib/assets';
 import { parseHash } from '../../lib/router';
-import { loadSchema } from './api';
 import type { DataState } from './DataPage';
 import { JsonTree } from './JsonTree';
 import { LiveStatement } from './LiveStatement';
 import { locate, pdfPageOf, type Location } from './locate';
 import { countCells, formatMinor, getAt, isCell, isObject, pathFromPointer, pointer, SECTION_INFO, sectionTitle, type Json, type Path } from './payload';
-
-function gqlTypeAt(schema: GraphQLSchema | null, path: Path): string | null {
-  if (!schema) return null;
-  let type: GraphQLInputType | undefined = schema.getType('StatementInput') as GraphQLInputType;
-  for (const key of path) {
-    if (!type) return null;
-    const inner: GraphQLInputType = getNullableType(type) as GraphQLInputType;
-    if (typeof key === 'number') {
-      if (!isListType(inner)) return null;
-      type = inner.ofType as GraphQLInputType;
-    } else {
-      if (!isInputObjectType(inner)) return null;
-      type = inner.getFields()[key]?.type;
-    }
-  }
-  return type ? String(type) : null;
-}
 
 function describe(v: Json | undefined): string {
   if (v === undefined) return 'Not present';
@@ -43,18 +24,12 @@ export function PayloadPanel({ state }: { state: DataState }) {
     return p ? pathFromPointer(p) : ['balances', 'ending'];
   });
   const [query, setQuery] = useState('');
-  const [schema, setSchema] = useState<GraphQLSchema | null>(null);
   const [copied, setCopied] = useState(false);
   const ptr = pointer(selected);
-
-  useEffect(() => {
-    void loadSchema().then((s) => setSchema(s.schema));
-  }, []);
 
   const node = getAt(published, selected);
   const loc = useMemo(() => locate(published, selected), [published, ptr]); // eslint-disable-line react-hooks/exhaustive-deps
   const page = useMemo(() => pdfPageOf(published, selected) ?? (typeof selected[0] === 'string' ? SECTION_INFO[selected[0]]?.page ?? null : null), [published, ptr]); // eslint-disable-line react-hooks/exhaustive-deps
-  const gqlType = useMemo(() => gqlTypeAt(schema, selected), [schema, ptr]); // eslint-disable-line react-hooks/exhaustive-deps
 
   // Settle before moving the preview, so arrowing through the tree stays smooth.
   const [focus, setFocus] = useState<Location | null>(loc);
@@ -106,11 +81,6 @@ export function PayloadPanel({ state }: { state: DataState }) {
 
         <div className="dpay-type">
           <span className="chip">{describe(node)}</span>
-          {gqlType && (
-            <span className="chip chip-code" title="GraphQL input type">
-              {gqlType}
-            </span>
-          )}
         </div>
 
         {isCell(node) ? (
