@@ -141,7 +141,7 @@ test.describe('Data & integration', () => {
     await page.goto('#/data');
     await expect(page.locator('.data-tab')).toHaveText(['How it works', 'Explore the payload', 'Edit & re-render']);
     await expect(page.locator('.dov-trust .badge')).toHaveCount(2);
-    await expect(page.locator('main')).not.toContainText(/graphql|openapi/i, { useInnerText: true });
+    await expect(page.locator('main')).not.toContainText(/graphql|openapi|\/v1\/|oauth|idempotency|illustrative|sepire\.com/i, { useInnerText: true });
     const links = page.locator('.dov-downloads a');
     await expect(links).toHaveCount(2);
     for (const href of await links.evaluateAll((as) => as.map((a) => a.getAttribute('href')!))) {

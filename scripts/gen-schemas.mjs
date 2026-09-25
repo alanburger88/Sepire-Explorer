@@ -16,7 +16,6 @@ const out = (f) => join(root, 'public', 'data', f);
 /** Sections Sepire derives on its side (rendering and source-audit metadata). Clients don't send them. */
 export const SEPIRE_SIDE_KEYS = ['qaIssues', 'placeholders', 'traceability'];
 
-const API_BASE = 'https://api.sepire.com';
 const CELL_KINDS = ['money', 'pct', 'num', 'date', 'blank', 'dash'];
 
 // Friendlier names for shapes that repeat or read badly when derived from their path.
@@ -213,7 +212,6 @@ function toJSONSchema(rootNode, objects) {
   }
   return {
     $schema: 'https://json-schema.org/draft/2020-12/schema',
-    $id: `${API_BASE}/schemas/statement.schema.json`,
     title: 'Sepire statement payload',
     description: DESCRIPTIONS.Statement,
     ...objectSchema(rootNode),

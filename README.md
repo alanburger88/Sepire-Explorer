@@ -19,7 +19,6 @@ print or save it as a PDF from inside the statement whenever they need to.
 | `#/data` | Data & integration | How statement data reaches Sepire (client → Sepire) with the compliance badges, a payload explorer tied to the statement and PDF, and an "edit & re-render" view. Downloads: sample payload and JSON Schema. |
 
 Everything in the Data section runs in the browser with demo data; nothing is sent anywhere.
-Endpoint names (`api.sepire.com`) are illustrative.
 
 The explorer is built for desktop (smaller screens get a notice), follows the OS light or dark
 setting with a toggle, and uses the Sepire palette with Montserrat and Inter.
@@ -79,7 +78,6 @@ describes the widget instead of opening it.
 | PDF | Replace `source/Sepire_Statement_v1.1.pdf` (same name) and run `python3 scripts/render-pdf.py` (needs PyMuPDF and Pillow). Check `PDF_PAGES` and the hotspots in `src/sections/compare/mappings.ts`. |
 | Tour stops | `src/sections/tour/steps.ts` |
 | Compliance badges | `src/components/ComplianceBadges.tsx` (wording for every badge) |
-| API host and endpoints | `src/sections/data/config.ts` and `API_BASE` in `scripts/gen-schemas.mjs` |
 | Sepire logo | Drop official artwork into `public/brand/` under the same names (`sepire-logo.svg`, `sepire-mark.svg`, `sepire-mark.png`, `sepire-mark-white.png`, `favicon-64.png`). The current files are traced from the supplied PNG by `scripts/build-logo.py`. |
 | Plan-sponsor logo | `source/brand/plan-sponsor-logo.svg` (a "Test Company" placeholder; text converted to paths with `scripts/text-to-path.py`) |
 | Intro screenshots | `node scripts/capture-shots.mjs` |

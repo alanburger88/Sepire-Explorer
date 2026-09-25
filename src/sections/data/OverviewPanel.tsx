@@ -1,8 +1,7 @@
-import { ArrowRight, Download, FileCheck2, KeyRound, Link2, MonitorSmartphone, Send, ServerCog, ShieldCheck, Database } from 'lucide-react';
+import { ArrowRight, Download, FileCheck2, MonitorSmartphone, Send, ServerCog, ShieldCheck, Database } from 'lucide-react';
 import { useEffect, useMemo, useState } from 'react';
 import { ComplianceBadges } from '../../components/ComplianceBadges';
 import { navigate } from '../../lib/router';
-import { API_BASE } from './config';
 import { AnatomyChart, type AnatomyRow } from './AnatomyChart';
 import type { DataState } from './DataPage';
 import { byteSize, countCells, formatBytes, gzipSize, SECTION_INFO, sectionTitle } from './payload';
@@ -53,7 +52,7 @@ export function OverviewPanel({ state }: { state: DataState }) {
             </span>
             <h3>Send it to Sepire</h3>
             <p>
-              One call per recipient to <code>POST /v1/statements</code>, or batches of up to 1,000.
+              One JSON payload per recipient, sent securely through Sepire’s API.
             </p>
           </li>
           <li>
@@ -61,7 +60,7 @@ export function OverviewPanel({ state }: { state: DataState }) {
               <ShieldCheck size={22} aria-hidden />
             </span>
             <h3>Validated on arrival</h3>
-            <p>Types, required fields and printed values are checked; every problem is returned with its JSON path.</p>
+            <p>Types, required fields and printed values are checked before anything is published.</p>
           </li>
           <li>
             <span className="dov-flow-icon">
@@ -101,17 +100,8 @@ export function OverviewPanel({ state }: { state: DataState }) {
 
         <div className="dov-side">
           <section className="card dov-steps" aria-labelledby="dov-steps-h">
-            <h3 id="dov-steps-h">Integrate in four steps</h3>
+            <h3 id="dov-steps-h">Integrate in two steps</h3>
             <ol>
-              <li>
-                <KeyRound size={18} aria-hidden />
-                <div>
-                  <strong>Authenticate</strong>
-                  <p>
-                    OAuth 2.0 client credentials: exchange your client ID and secret at <code>{API_BASE.replace('https://', '')}/oauth2/token</code>.
-                  </p>
-                </div>
-              </li>
               <li>
                 <FileCheck2 size={18} aria-hidden />
                 <div>
@@ -123,16 +113,7 @@ export function OverviewPanel({ state }: { state: DataState }) {
                 <ServerCog size={18} aria-hidden />
                 <div>
                   <strong>Send one payload per recipient</strong>
-                  <p>An Idempotency-Key header makes retries safe: the same statement is never published twice.</p>
-                </div>
-              </li>
-              <li>
-                <Link2 size={18} aria-hidden />
-                <div>
-                  <strong>Get the result</strong>
-                  <p>
-                    <code>201</code> with the statement ID and link, or <code>422</code> with every problem and its path.
-                  </p>
+                  <p>Sepire validates each payload on arrival, then publishes the statement in English and Spanish.</p>
                 </div>
               </li>
             </ol>

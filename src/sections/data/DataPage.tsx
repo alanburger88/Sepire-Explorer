@@ -79,7 +79,7 @@ export function DataPage({ tabParam }: { tabParam?: string }) {
             <Icon size={16} aria-hidden /> {label}
           </a>
         ))}
-        <span className="data-tabs-note">Demo data. Edits stay in your browser. Endpoint names are illustrative.</span>
+        <span className="data-tabs-note">Demo data. Edits stay in your browser.</span>
       </nav>
 
       <div className="data-body">
