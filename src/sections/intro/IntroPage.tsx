@@ -70,9 +70,8 @@ export function IntroPage() {
             From a flat PDF to a <span className="intro-accent">living statement</span>.
           </h1>
           <p className="intro-lede">
-            See how Sepire turns a 13-page retirement plan PDF into an interactive statement of record. It is
-            personal, plain-spoken, bilingual and accessible, it prints on demand, and it is powered by a single data
-            payload.
+            See how Sepire turns a retirement plan PDF into an interactive statement of record. It is personal,
+            plain-spoken, bilingual and accessible, it prints on demand, and it is a legal statement of record.
           </p>
           <div className="intro-ctas">
             <a className="btn btn-primary btn-lg" href="#/tour">
