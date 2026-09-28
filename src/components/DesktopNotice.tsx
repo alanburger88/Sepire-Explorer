@@ -1,5 +1,6 @@
 import { Monitor } from 'lucide-react';
 import { useEffect, useState } from 'react';
+import { STATEMENT_TAB_URL } from '../lib/assets';
 
 /** The explorer is designed for desktop. Small screens get a friendly note (dismissible). */
 export function DesktopNotice() {
@@ -21,7 +22,7 @@ export function DesktopNotice() {
           device — you can open it directly on this one.
         </p>
         <div className="desktop-notice-actions">
-          <a className="btn btn-primary" href="statement/index.html#/overview">
+          <a className="btn btn-primary" href={`${STATEMENT_TAB_URL}#/overview`}>
             Open the statement
           </a>
           <button type="button" className="btn btn-ghost" onClick={() => setDismissed(true)}>

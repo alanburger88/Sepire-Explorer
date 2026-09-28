@@ -29,9 +29,10 @@ test.describe('Intro', () => {
     for (const href of ['#/tour', '#/compare', '#/data']) {
       await expect(page.locator(`main a[href^="${href}"]`).first()).toBeVisible();
     }
+    // The new tab opens the hosted statement; stub it so the test stays offline.
+    await page.context().route(/salesdemo\.infoslipscloud\.com/, (r) => r.fulfill({ contentType: 'text/html', body: '<title>Sepire</title>' }));
     const [tab] = await Promise.all([page.waitForEvent('popup'), page.getByRole('button', { name: /open the statement/i }).click()]);
-    await expect(tab).toHaveURL(/statement\/index\.html/);
-    await expect(tab.getByText('Hi Sidney,')).toBeVisible();
+    await expect(tab).toHaveURL('https://salesdemo.infoslipscloud.com/assets/_templates/Investment/Sepire/index.html#/overview');
   });
 
   test('shows the compliance badges', async ({ page }) => {

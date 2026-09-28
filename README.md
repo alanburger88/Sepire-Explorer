@@ -78,6 +78,7 @@ describes the widget instead of opening it.
 | PDF | Replace `source/Sepire_Statement_v1.1.pdf` (same name) and run `python3 scripts/render-pdf.py` (needs PyMuPDF and Pillow). Check `PDF_PAGES` and the hotspots in `src/sections/compare/mappings.ts`. |
 | Tour stops | `src/sections/tour/steps.ts` |
 | Compliance badges | `src/components/ComplianceBadges.tsx` (wording for every badge) |
+| "Open the statement" / new-tab link | `STATEMENT_TAB_URL` in `src/lib/assets.ts` (the hosted statement) |
 | Sepire logo | Drop official artwork into `public/brand/` under the same names (`sepire-logo.svg`, `sepire-mark.svg`, `sepire-mark.png`, `sepire-mark-white.png`, `favicon-64.png`). The current files are traced from the supplied PNG by `scripts/build-logo.py`. |
 | Plan-sponsor logo | `source/brand/plan-sponsor-logo.svg` (a "Test Company" placeholder; text converted to paths with `scripts/text-to-path.py`) |
 | Intro screenshots | `node scripts/capture-shots.mjs` |
